@@ -1,0 +1,292 @@
+/* Color Palette */
+$white: #FFFFFF;
+$mint: #B9DCD2;
+$dark-mint: #21C8B8;
+$light-grey: #ECECEC;
+$dark-grey: #757676;
+$navy: #454D64;
+$black: #3C3C3C;
+$star: #F1C40F;
+
+/* Fonts */
+@font-face {
+    font-family: "Damion";
+    src: url(../fonts/Damion_Regular.ttf);
+}
+@font-face {
+    font-family: "Marmelad";
+    src: url(../fonts/Marmelad_Regular.ttf);
+}
+
+body {
+	font-family: "Marmelad";
+	font-size: 1rem;
+}
+
+h1 {
+	text-align: center;
+}
+
+.accent_font {
+    font-family: "Damion";
+}
+
+header {
+	height: 90vh;
+	min-height: 500px;
+	background: url(../images/hero_bg_raw.jpg) no-repeat center 20%;
+	background-size: cover;
+	color: $white;
+	text-align: center;
+
+	.hero {
+		height: 100%;
+		background-color: rgba($black, 0.4);
+		background-image: url(../images/overlay.png);
+		background-repeat: repeat;
+		padding: 1em;
+	}
+	#logo {
+		margin: 10em auto 0;
+		display: block;
+		height: 12vh;
+		margin-bottom: 2vh;
+	}
+	.headline {
+		margin-bottom: 10vh;
+		font-size: 1.75em;
+		line-height: 1;
+	}
+	.accent_font {
+		font-size: 1.75em;
+	}
+}
+
+.button {
+	display: inline-block;
+	height: 40px;
+	width: 135px;
+	margin: 0.5em;
+	cursor: pointer;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	&:hover {
+		img {
+			box-shadow: 0 0 1em rgba(black, 0.4);
+		}
+	}
+
+	&:active {
+		img {
+			box-shadow: 0 0 1em rgba(black, 0.7);
+		}
+	}
+}
+
+#play_video {
+	display: block;
+	margin: 2em auto 1em;
+	width: 10vh;
+	height: 10vh;
+	min-width: 60px;
+	min-height: 60px;
+	background: transparent;
+    border: 0;
+
+	img {
+		width: 100%;
+		height: 100%;
+		opacity: 0.6;
+	}
+	&:hover {
+		img {
+			opacity: 1;
+		}
+	}
+}
+
+p.video {
+	font-size: 1.25em;
+}
+
+section {
+	padding: 5vh 0;
+	border-bottom: 1px solid $light-grey;
+}
+
+.mockup_outline {
+	width: 304px;
+	height: 598px;
+	background-image: url(../images/iphone_wireframe_xs.png);
+	.mockup_video {
+	    top: 68px;
+	    margin: 0 auto;
+	    border: 3px solid rgba($dark-grey, 0.25);
+	    border-radius: 5px;
+	    display: block;
+	    position: relative;
+	}
+}
+
+.copy {
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	.em {
+		width: 3em;
+		height: 3em;
+		margin: 0 1em;
+	}
+	.em:first-of-type {
+		margin-left: 0;
+	}
+	.headline {
+		margin-top: 1em;
+		font-size: 2.5em;
+		line-height: 1;
+		color: $dark-grey;
+	}
+	.accent_font {
+		font-size: 1.6em;
+		color: $black;
+	}
+}
+
+.testimonials .testimonial_card{
+	width: auto;
+}
+
+.benefits .testimonial_card {
+	max-width: 350px;
+}
+
+.testimonial_card {
+	border: 1px solid $light-grey;
+	padding: 1em;
+	margin-bottom: 1em;
+	.top {
+		display: block;
+		width: 100%;
+	}
+	.face {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		display: inline-block;
+	}
+	.handle {
+		display: inline-block;
+		margin: 1em 0 0 1em;
+		font-size: 1em;
+		color: $dark-grey;
+		.name {
+			font-size: 1.5em;
+			color: $black;
+		}
+		.link {
+			color: $dark-mint;
+		}
+	}
+	.review {
+		margin-top: 0.5em;
+		font-size: 1.35em;
+	}
+}
+
+.news {
+	.logos {
+		text-align: center;
+	}
+	.news_logo {
+		margin: 1em 1.25em;
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    	filter: grayscale(100%);
+    	opacity: 0.5;
+	}
+}
+footer {
+	height: 500px;
+	background: url(../images/hero_bg_raw.jpg) no-repeat center 70%;
+	background-size: cover;
+	color: $white;
+	overflow: hidden;
+	position: relative;
+
+	.overlay {
+		height: 100%;
+		background-color: rgba($black, 0.4);
+		background-image: url(../images/overlay.png);
+		background-repeat: repeat;
+		padding: 1em;
+	}
+	.top_spacer {
+		margin-top: 5em;
+	}
+	a {
+		color: $white;
+		cursor: pointer;
+		&:hover, &:focus {
+			i.fa {
+				color: $white;
+				opacity: 1;
+			}
+		}
+	}
+	i.fa {
+		font-size: 4em;
+		letter-spacing: 0.25em;
+		opacity: 0.7;
+	}
+	.rating {
+		i.fa {
+			font-size: 2em;
+			letter-spacing: 0.2em;
+			color: $star;
+		    opacity: 1;
+		    text-shadow: 1px 1px rgba($black, 0.3);
+		    text-align: center;
+		    line-height: 40px;
+		}
+	}
+	.download_rating {
+		display: block;
+		.button, .rating {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	.phone {
+		display: block;
+		position: absolute;
+	}
+	.phone#android {
+		margin-top: 3em;
+		margin-left: 10em;
+	}
+	.phone#iphone {
+		margin-top: 10em;
+	}
+}
+
+@import 'responsive';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
