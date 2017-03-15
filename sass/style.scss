@@ -156,6 +156,7 @@ nav {
 		text-decoration: none;
 		img {
 			vertical-align: text-bottom;
+			height: 2.5rem;
 		}
 		span {
 			font-family: "Marmelad";
@@ -172,6 +173,7 @@ nav {
 
 main {
 	background: linear-gradient(0deg, #FFFFFF 0%, $grey-light 100%);
+	box-shadow: 0 -1rem 5rem $white;
 
 	section {
 		margin: 20vh 0;

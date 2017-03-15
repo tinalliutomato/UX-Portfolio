@@ -107,7 +107,8 @@ nav {
     color: #0F0A06;
     text-decoration: none; }
     nav a img {
-      vertical-align: text-bottom; }
+      vertical-align: text-bottom;
+      height: 2.5rem; }
     nav a span {
       font-family: "Marmelad";
       font-size: 1.5rem;
@@ -117,7 +118,8 @@ nav {
       text-decoration: none; }
 
 main {
-  background: linear-gradient(0deg, #FFFFFF 0%, #EDEEF3 100%); }
+  background: linear-gradient(0deg, #FFFFFF 0%, #EDEEF3 100%);
+  box-shadow: 0 -1rem 5rem #ffffff; }
   main section {
     margin: 20vh 0; }
     main section img.section-end {
@@ -280,10 +282,24 @@ section {
   .latched #case1 {
     margin-top: 6rem; }
 
+  header #splashLogo {
+    margin-left: -5rem;
+    max-width: 70%; }
   header .hero {
     text-align: center; }
   header quote {
     text-align: center; }
+
+  nav > .container {
+    padding: 1rem 1.5rem; }
+  nav a {
+    display: inline-block;
+    text-align: center; }
+    nav a span {
+      display: block;
+      padding-left: 0;
+      font-size: 1rem;
+      line-height: 1.5rem; }
 
   main #case1 {
     margin-top: 0;
