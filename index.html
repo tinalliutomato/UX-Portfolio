@@ -38,11 +38,12 @@
 		</div>
 	</div>
 	</header>
+	<div class="spacer"></div>
 	<main>
 		<nav>
 			<div class="container">
 				<div class="row">
-					<a id="navLogo"><img src="images/logo/logo-symbol.svg" alt="Back to Home" height="25"/></a>
+					<a id="navLogo" href=""><img src="images/logo/logo-symbol.svg" alt="Back to Home" height="25"/></a>
 					<div class="container-fluid pull-right">
 						<a href=""><img src="images/nav/portfolio.png"><span>Portfolio</span></a>
 						<a href=""><img src="images/nav/about.png"><span>About</span></a>
@@ -198,5 +199,31 @@
 			</div>
 		</section>
 	</main>
+		<script type="text/javascript">
+    	/* Store the original positions */
+		 var hero = $('header');
+		 var main = $('main');
+		 console.log(hero.position());
+		 console.log(main.position());
+		 var heroOrgTop = hero.position().top;
+		 var mainOrgTop = main.position().top;
+		 //debugger;
+
+		/* respond to the scroll event */
+	    $(window).scroll(function(){
+	        /* get the current scroll position */
+	        var st = $(window).scrollTop();
+	        /* change classes based on section positions */
+	        if (st >= mainOrgTop) {
+	        	main.addClass('latched');
+	            
+	        }
+	    });
+
+	    $( "#navLogo" ).click(function() {
+			main.removeClass('latched');
+		});
+
+	</script>
 </body>
 </html>
