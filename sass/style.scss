@@ -20,30 +20,44 @@ $yellow: #EBDC23;
     src: url(../fonts/Marmelad_Regular.ttf);
 }
 @font-face {
-    font-family: "OpenSans Light";
+    font-family: "OpenSans";
+    font-weight: 100;
+    font-style: normal;
     src: url(../fonts/OpenSans-Light.ttf);
 }
 @font-face {
-    font-family: "OpenSans Regular";
+    font-family: "OpenSans";
+    font-weight: 300;
+    font-style: normal;
     src: url(../fonts/OpenSans-Regular.ttf);
 }
 @font-face {
-    font-family: "OpenSans Semibold";
+    font-family: "OpenSans";
+    font-weight: 500;
+    font-style: normal;
     src: url(../fonts/OpenSans-Semibold.ttf);
 }
 @font-face {
-    font-family: "OpenSans Bold";
+    font-family: "OpenSans";
+    font-weight: 700;
+    font-style: normal;
     src: url(../fonts/OpenSans-Bold.ttf);
 }
 
 body {
-	font-family: "OpenSans Regular";
+	font-family: "OpenSans", arial, sans-serif;
+	font-weight: 300;
 	font-size: 1.5rem;
 	line-height: 1.75;
 }
 
+.smooth-transition {
+	-webkit-transition: all .2s ease-in-out; /* Safari 3.1 to 6.0 */
+	transition: all .2s ease-in-out;
+}
+
 h1, h2 {
-	font-family: "Marmelad";
+	font-family: "Marmelad", serif;
 }
 
 h1 {
@@ -64,8 +78,8 @@ h4 {
 }
 
 quote {
-    font-family: "Caveat Regular";
-    font-size: 2rem;
+    font-family: "Caveat Regular", serif;
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 2rem;
     line-height: 1.5;
@@ -84,8 +98,6 @@ quote {
 header {
 	height: 100vh;
 	z-index: -100;
-	
-	@extend .v-center-parent;
 	position: fixed;
 	top: 0;
 	
@@ -98,12 +110,15 @@ header {
 	}
 	.subhead {
 		font-size: 2.5rem;
+		font-weight: 500;
 		line-height: 2;
-		color: $grey-light;
+
+		color: rgba($grey-dark,0.35);
 	}
 	quote {
 		font-size: 2.75rem;
-		margin-top: 2rem;
+		display: block;
+		margin-top: 5rem;
 		text-align: left;
 	}
 }
@@ -127,6 +142,11 @@ nav {
 	#navLogo {
 		img {
 			opacity: 0.15;
+			@extend .smooth-transition;
+
+			&:hover {
+				opacity: 0.75;
+			}
 		}
 	}
 
@@ -135,12 +155,12 @@ nav {
 		color: $black;
 		text-decoration: none;
 		img {
-			vertical-align: top;
+			vertical-align: text-bottom;
 		}
 		span {
 			font-family: "Marmelad";
 			font-size: 1.5rem;
-			line-height: 25px;
+			line-height: 3rem;
 			padding-left: 1rem;
 			
 		}
@@ -162,25 +182,28 @@ main {
 	}
 
 	.case {
+		.row {
+			display: flex;
+			flex-direction: row;
+		}
 		img {
 			width: 100%;
 			max-width: 540px;
 			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 			filter: grayscale(100%);
 			box-shadow: 4px 4px 6px 0 rgba($grey-dark,0.25);
-			-webkit-transition: all .2s ease-in-out; /* Safari 3.1 to 6.0 */
-			transition: all .2s ease-in-out;
+			@extend .smooth-transition;
 		}
-		
+		.info {
+		    bottom: 0;
+		    position: absolute;
+		}
 		h2 {
 			margin-bottom: 0;
 		}
 		.subhead {
 			color: $grey-dark;
 			margin-bottom: 2rem;
-		}
-		.info {
-			margin-top: 30vh;
 		}
 	}
 	.case:hover {
@@ -266,7 +289,7 @@ main {
 
 	.goodbye {
 		img {
-			margin-top: 20vh;
+			margin-top: 10vh;
 		}
 	}
 }
@@ -317,7 +340,8 @@ button {
 	margin-right: 2rem;
 	cursor: pointer;
 	background: transparent;
-    font-family: "OpenSans Semibold";
+    font-family: "OpenSans";
+    font-weight: bold;
 
 	&:hover {
 	}
@@ -358,6 +382,10 @@ section {
 		position: fixed;
 		top: 0;
 		width: 100%;
+	}
+
+	#case1 {
+		margin-top: calc(6rem + 20vh);
 	}
 }
 

@@ -5,7 +5,42 @@
 	.cards {
 		flex-direction: column;
 	}
-
+	.latched {
+		#case1 {
+			margin-top: 6rem;
+		}
+	}
+	header {
+		.hero {
+			text-align: center;
+		}
+		quote {
+			text-align: center;
+		}
+	}
+	main {
+		#case1 {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		.case {
+			.row {
+				flex-direction: column;
+				>* {
+					padding: 0;
+				}
+			}
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+			.info {
+				position: inherit;
+				text-align: center;
+				padding: 0 1.5rem;
+			}
+		}
+	}
 }
 
 /* Small devices */

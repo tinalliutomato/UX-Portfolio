@@ -7,24 +7,38 @@
   font-family: "Marmelad";
   src: url(../fonts/Marmelad_Regular.ttf); }
 @font-face {
-  font-family: "OpenSans Light";
+  font-family: "OpenSans";
+  font-weight: 100;
+  font-style: normal;
   src: url(../fonts/OpenSans-Light.ttf); }
 @font-face {
-  font-family: "OpenSans Regular";
+  font-family: "OpenSans";
+  font-weight: 300;
+  font-style: normal;
   src: url(../fonts/OpenSans-Regular.ttf); }
 @font-face {
-  font-family: "OpenSans Semibold";
+  font-family: "OpenSans";
+  font-weight: 500;
+  font-style: normal;
   src: url(../fonts/OpenSans-Semibold.ttf); }
 @font-face {
-  font-family: "OpenSans Bold";
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-style: normal;
   src: url(../fonts/OpenSans-Bold.ttf); }
 body {
-  font-family: "OpenSans Regular";
+  font-family: "OpenSans", arial, sans-serif;
+  font-weight: 300;
   font-size: 1.5rem;
   line-height: 1.75; }
 
+.smooth-transition, nav #navLogo img, main .case img {
+  -webkit-transition: all .2s ease-in-out;
+  /* Safari 3.1 to 6.0 */
+  transition: all .2s ease-in-out; }
+
 h1, h2 {
-  font-family: "Marmelad"; }
+  font-family: "Marmelad", serif; }
 
 h1 {
   font-size: 3rem; }
@@ -40,13 +54,13 @@ h4 {
   text-transform: uppercase; }
 
 quote {
-  font-family: "Caveat Regular";
-  font-size: 2rem;
+  font-family: "Caveat Regular", serif;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
   line-height: 1.5; }
 
-.v-center-parent, header {
+.v-center-parent {
   position: relative; }
 
 .v-center-child, header .hero {
@@ -63,11 +77,13 @@ header {
     margin-left: -89px; }
   header .subhead {
     font-size: 2.5rem;
+    font-weight: 500;
     line-height: 2;
-    color: #EDEEF3; }
+    color: rgba(124, 124, 124, 0.35); }
   header quote {
     font-size: 2.75rem;
-    margin-top: 2rem;
+    display: block;
+    margin-top: 5rem;
     text-align: left; }
 
 .spacer {
@@ -84,16 +100,18 @@ nav {
     padding: 1.5rem; }
   nav #navLogo img {
     opacity: 0.15; }
+    nav #navLogo img:hover {
+      opacity: 0.75; }
   nav a {
     margin-left: 3rem;
     color: #0F0A06;
     text-decoration: none; }
     nav a img {
-      vertical-align: top; }
+      vertical-align: text-bottom; }
     nav a span {
       font-family: "Marmelad";
       font-size: 1.5rem;
-      line-height: 25px;
+      line-height: 3rem;
       padding-left: 1rem; }
     nav a:hover, nav a:active {
       text-decoration: none; }
@@ -104,23 +122,24 @@ main {
     margin: 20vh 0; }
     main section img.section-end {
       opacity: 0.15; }
+  main .case .row {
+    display: flex;
+    flex-direction: row; }
   main .case img {
     width: 100%;
     max-width: 540px;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    box-shadow: 4px 4px 6px 0 rgba(124, 124, 124, 0.25);
-    -webkit-transition: all .2s ease-in-out;
-    /* Safari 3.1 to 6.0 */
-    transition: all .2s ease-in-out; }
+    box-shadow: 4px 4px 6px 0 rgba(124, 124, 124, 0.25); }
+  main .case .info {
+    bottom: 0;
+    position: absolute; }
   main .case h2 {
     margin-bottom: 0; }
   main .case .subhead {
     color: #7C7C7C;
     margin-bottom: 2rem; }
-  main .case .info {
-    margin-top: 30vh; }
   main .case:hover img {
     -webkit-filter: grayscale(0%);
     /* Safari 6.0 - 9.0 */
@@ -177,7 +196,7 @@ main {
     main .social-media .icon:hover span {
       visibility: visible; }
   main .goodbye img {
-    margin-top: 20vh; }
+    margin-top: 10vh; }
 
 /* Stars Rating */
 .skill-level {
@@ -220,7 +239,8 @@ button {
   margin-right: 2rem;
   cursor: pointer;
   background: transparent;
-  font-family: "OpenSans Semibold"; }
+  font-family: "OpenSans";
+  font-weight: bold; }
 
 button.primary {
   border: 1px solid #EBDC23;
@@ -248,12 +268,37 @@ section {
     position: fixed;
     top: 0;
     width: 100%; }
+  .latched #case1 {
+    margin-top: calc(6rem + 20vh); }
 
 /* Responsive Layout */
 /* Extra-small devices */
 @media (max-width: 767px) {
   .cards {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .latched #case1 {
+    margin-top: 6rem; }
+
+  header .hero {
+    text-align: center; }
+  header quote {
+    text-align: center; }
+
+  main #case1 {
+    margin-top: 0;
+    padding-top: 0; }
+  main .case .row {
+    flex-direction: column; }
+    main .case .row > * {
+      padding: 0; }
+  main .case img {
+    display: block;
+    margin: 0 auto; }
+  main .case .info {
+    position: inherit;
+    text-align: center;
+    padding: 0 1.5rem; } }
 /* Small devices */
 @media (min-width: 768px) and (max-width: 991px) {
   .cards {

@@ -2,7 +2,30 @@
 /* Extra-small devices */
 @media (max-width: 767px) {
   .cards {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .latched #case1 {
+    margin-top: 6rem; }
+
+  header .hero {
+    text-align: center; }
+  header quote {
+    text-align: center; }
+
+  main #case1 {
+    margin-top: 0;
+    padding-top: 0; }
+  main .case .row {
+    flex-direction: column; }
+    main .case .row > * {
+      padding: 0; }
+  main .case img {
+    display: block;
+    margin: 0 auto; }
+  main .case .info {
+    position: inherit;
+    text-align: center;
+    padding: 0 1.5rem; } }
 /* Small devices */
 @media (min-width: 768px) and (max-width: 991px) {
   .cards {
