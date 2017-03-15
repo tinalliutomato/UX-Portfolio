@@ -126,8 +126,28 @@ main {
       content: "\f046";
       color: #7C7C7C;
       margin-right: 1rem; }
+  main .social-media .icon {
+    text-align: center; }
+    main .social-media .icon span {
+      display: table-cell;
+      width: 100%;
+      height: 6rem;
+      font-family: "Caveat Regular";
+      color: #7C7C7C;
+      vertical-align: middle;
+      line-height: 1;
+      visibility: hidden; }
+    main .social-media .icon i {
+      display: block;
+      width: 100%;
+      font-size: 5rem; }
+    main .social-media .icon a {
+      color: #0F0A06;
+      text-decoration: none; }
+    main .social-media .icon:hover span {
+      visibility: visible; }
   main .goodbye img {
-    margin-top: 10vh; }
+    margin-top: 20vh; }
 
 /* Stars Rating */
 .skill-level {
