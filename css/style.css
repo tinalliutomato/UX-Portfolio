@@ -32,10 +32,10 @@ body {
   font-size: 1.5rem;
   line-height: 1.75; }
 
-.smooth-transition, nav #navLogo img, main .case img {
-  -webkit-transition: all .2s ease-in-out;
+.smooth-transition, nav #navLogo img, main .case img, .btn {
+  -webkit-transition: all .15s linear;
   /* Safari 3.1 to 6.0 */
-  transition: all .2s ease-in-out; }
+  transition: all .15s linear; }
 
 h1, h2 {
   font-family: "Marmelad", serif; }
@@ -134,10 +134,16 @@ nav {
 main {
   background: linear-gradient(0deg, #FFFFFF 0%, #EDEEF3 100%);
   box-shadow: 0 -1rem 5rem #ffffff; }
-  main section {
-    margin: 20vh 0; }
-    main section img.section-end {
-      opacity: 0.15; }
+  main section img.section-end {
+    opacity: 0.15; }
+  main section:hover .btn.primary {
+    color: #c9bb12;
+    border-color: #c9bb12;
+    color: #EBDC23;
+    border-color: #EBDC23; }
+  main section:hover .btn.secondary {
+    color: #7C7C7C;
+    border-color: #7C7C7C; }
   main .case .row {
     display: flex;
     flex-direction: row; }
@@ -174,7 +180,7 @@ main {
   main .skills ul {
     padding: 2rem 0; }
     main .skills ul lh {
-      color: #EDEEF3;
+      color: rgba(124, 124, 124, 0.5);
       display: inherit;
       line-height: 2;
       font-size: 1.5rem;
@@ -251,7 +257,8 @@ main {
 .btn {
   margin-top: 1rem;
   line-height: 5rem;
-  padding: 0 4rem;
+  padding: 0 3rem;
+  border-radius: 0;
   margin-right: 2rem;
   cursor: pointer;
   background: transparent;
@@ -260,14 +267,17 @@ main {
 
 .btn.primary {
   border: 1px solid #EBDC23;
-  color: #EBDC23; }
+  color: #EBDC23;
+  border: 1px solid #969696;
+  color: #969696; }
 
 .btn.secondary {
-  border: 1px solid #7C7C7C;
-  color: #7C7C7C; }
+  border: 1px solid #969696;
+  color: #969696; }
 
 section {
-  padding: 5vh 0; }
+  padding: 10vh 0;
+  margin: 10vh 0; }
 
 .center-block {
   display: table;
@@ -285,7 +295,7 @@ section {
     top: 0;
     width: 100%; }
   .latched #case1 {
-    margin-top: calc(6rem + 20vh); }
+    margin-top: calc(6rem + 10vh); }
 
 .tags {
   color: #7C7C7C;
@@ -300,10 +310,10 @@ section {
   font-weight: 100; }
 
 .toc {
-  margin-top: 20vh;
-  padding-top: 5vh; }
+  margin-top: 10vh;
+  padding-top: 10vh; }
   .toc.latched {
-    margin-top: calc(20vh - 100px); }
+    margin-top: calc(10vh - 100px); }
   .toc ul {
     padding: 2rem 0; }
     .toc ul lh {

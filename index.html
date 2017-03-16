@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="css/animsition.min.css">
 	<!-- animsition.js -->
 	<script src="js/animsition.min.js"></script>
-	<script src="js/transition.js"></script>
+	<!-- <script src="js/transition.js"></script> -->
 	
 </head>
 
@@ -202,31 +202,21 @@
 		</section>
 	</main>
 		<script type="text/javascript">
-    	/* Store the original positions */
-		 var hero = $('header');
+
 		 var main = $('main');
-		 console.log(hero.position());
-		 console.log(main.position());
-		 var heroOrgTop = hero.position().top;
 		 var mainOrgTop = main.position().top;
 
-		 //debugger;
-
-		/* respond to the scroll event */
 	    $(window).scroll(function(){
-	        /* get the current scroll position */
 	        var st = $(window).scrollTop();
-	        /* change classes based on section positions */
 	        if (st >= mainOrgTop) {
 	        	main.addClass('latched');
 	        }
-	        console.log(st);
 	    }); 
 
 	    $( "#navLogo" ).click(function() {
 			main.removeClass('latched');
 		});
-
+		
 	</script>
 </body>
 </html>
