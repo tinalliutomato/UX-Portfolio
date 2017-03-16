@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Tina Liu | UI/UX Designer</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- animsition.css -->
+	<link rel="stylesheet" href="css/animsition.min.css">
+	<!-- animsition.js -->
+	<script src="js/animsition.min.js"></script>
+	<script src="js/transition.js"></script>
+	
+</head>
+<body data-spy="scroll" data-target=".toc" data-offset="400">
+	<nav class="case">
+		<div class="container-fluid">
+				<div class="pull-right">
+					<a href="index.html#case1"><img src="images/nav/close.png"></a>
+				</div>
+		</div>
+	</nav>
+	<main>
+		<!--<div class="spacer-quarter"></div>-->
+		<div class="container">
+			<div class="hidden-xs col-sm-2">
+				<div class="toc">
+					<ul class="nav">
+						<lh>Table of Content</lh>
+						<li class="active"><a href="#0">Introduction</a></li>
+						<li><a href="#1">The Problem</a></li>
+						<li><a href="#2">Final Design</a></li>
+						<li>The Process</li>
+							<ul>
+							<li>User Stories</li>
+							<li>User Flow Diagrams</li>
+							<li>Wireframes</li>
+							<li>Design</li>
+							<li>Prototyping</li>
+							<li>Testing</li>
+							<li>Peer Review</li>
+							</ul>
+						<li>Lessons Learned</li>
+						<li>Disclaimers</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-10">
+				<section id="0">
+				<h1>Ethical Shopper</h1>
+				<p class="tags">#e-commerce  #ethicalshopping  #responsivewebdesign  #exploration</p>
+				<p class="intro">Ethical Shopper is a project that I combined my design skills with my love for animals, equality and the environment.</p>
+
+				<h2 id="1"> The Problem</h2>
+				<p>Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer. Tote bag 8-bit flannel dreamcatcher photo booth. Tofu photo booth American Apparel, cliche brunch swag freegan lomo retro cray Vice gastropub post-ironic +1 pickled. Marfa Tonx next level, Banksy lo-fi vegan pop-up chia small batch DIY seitan asymmetrical viral. Disrupt salvia bespoke craft beer master cleanse. Butcher cornhole gentrify pop-up, raw denim viral literally.</p>
+				</section>
+
+<!--				<section id="1">
+				<h2>The Problem</h2>
+				</section>-->
+
+				<section id="2">
+				<h2>The Final Design</h2>
+				</section>
+
+				<section>
+				<img src="images/logo/logo-symbol.svg" class="center-block section-end" alt="End of Section" height="40"/>
+				</section>
+
+				<section class="goodbye">
+					<div class="container-fluid">
+						<div class="row">
+							<quote class="center-block">How about another one?</quote>
+							<div class="center-block">
+								<a class="btn primary">Let's do it!</a><a class="btn secondary">Maybe next time</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript">
+    	/* Store the original positions */
+		 var toc = $('.toc');
+		 
+		 console.log(toc.position());
+		 
+		 var tocOrigTop = toc.position().top;
+		 
+
+		 //debugger;
+
+		/* respond to the scroll event */
+	    $(window).scroll(function(){
+	        /* get the current scroll position */
+	        var st = $(window).scrollTop();
+	        /* change classes based on section positions */
+	        if (st >= 100) {
+	        	toc.addClass('latched');
+	        	console.log(st);
+	        } else {
+	        	toc.removeClass('latched');
+	        }
+	        
+	    }); 
+
+	</script>
+</body>
+</html>

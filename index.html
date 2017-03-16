@@ -15,6 +15,12 @@
 
 	<!-- Javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- animsition.css -->
+	<link rel="stylesheet" href="css/animsition.min.css">
+	<!-- animsition.js -->
+	<script src="js/animsition.min.js"></script>
+	<script src="js/transition.js"></script>
 	
 </head>
 
@@ -63,7 +69,7 @@
 							<h2>Ethical Shopper</h2>
 							<p class="subhead">a responsive e-commerce site</p>
 							<p>If you have tried to be conscious about what you buy you know the struggles: reading the material list, the manufacturing process trying to determine if it fits your ethical criteria. Ethical Shopper strives to make shopping ethically much more convenient.</p>
-							<button class="primary"> Read Case Study</button>
+							<a class="btn primary" href="ethical_shopper.html">Read Case Study</a>
 						</div>
 					</div>
 				</div>
@@ -81,7 +87,7 @@
 							<h2>Styaile</h2>
 							<p class="subhead">a mobile app design</p>
 							<p>Isn’t it frustrating when the weather is unpredictable, leaving us either too warm, too cold or simply unprepared? Styaile is an app that provides outfit recommendations based on the weather, activity, and the pieces in the user’s wardrobe.</p>
-							<button class="primary"> Read Case Study</button>
+							<a class="btn primary">Read Case Study</a>
 						</div>
 					</div>
 				</div>
@@ -99,7 +105,7 @@
 							<h2>Product Showcase</h2>
 							<p class="subhead">a responsive landing page for a mobile app</p>
 							<p>A minimalist, responsive landing page that shows the potential user what Styaile is about, with the goal of encouraging download.</p>
-							<button class="primary"> Read Case Study</button>
+							<a class="btn primary">Read Case Study</a>
 						</div>
 					</div>
 				</div>
@@ -166,7 +172,7 @@
 
 				<div class="row">
 				<div class="center-block">
-					<button class="secondary">More About Me</button><button class="primary">Contact Me</button>
+					<a class="btn secondary">More About Me</a><a class="btn primary">Contact Me</a>
 				</div>
 				</div>
 
@@ -203,6 +209,7 @@
 		 console.log(main.position());
 		 var heroOrgTop = hero.position().top;
 		 var mainOrgTop = main.position().top;
+
 		 //debugger;
 
 		/* respond to the scroll event */
@@ -212,9 +219,9 @@
 	        /* change classes based on section positions */
 	        if (st >= mainOrgTop) {
 	        	main.addClass('latched');
-	            
 	        }
-	    });
+	        console.log(st);
+	    }); 
 
 	    $( "#navLogo" ).click(function() {
 			main.removeClass('latched');

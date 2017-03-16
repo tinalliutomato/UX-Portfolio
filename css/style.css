@@ -86,11 +86,23 @@ header {
     margin-top: 5rem;
     text-align: left; }
 
-.spacer {
+.spacer, .spacer-quarter {
   width: 0;
   height: 100vh;
   clear: both;
   position: relative; }
+
+.spacer-quarter {
+  height: 25vh; }
+
+nav.case {
+  position: fixed;
+  background: transparent;
+  top: 0;
+  width: 100%;
+  box-shadow: none; }
+  nav.case img {
+    margin-top: 15px; }
 
 nav {
   background: #EDEEF3;
@@ -236,9 +248,9 @@ main {
   height: 100%;
   border: 1px solid rgba(124, 124, 124, 0.15); }
 
-button {
+.btn {
   margin-top: 1rem;
-  height: 5rem;
+  line-height: 5rem;
   padding: 0 4rem;
   margin-right: 2rem;
   cursor: pointer;
@@ -246,11 +258,11 @@ button {
   font-family: "OpenSans";
   font-weight: bold; }
 
-button.primary {
+.btn.primary {
   border: 1px solid #EBDC23;
   color: #EBDC23; }
 
-button.secondary {
+.btn.secondary {
   border: 1px solid #7C7C7C;
   color: #7C7C7C; }
 
@@ -274,6 +286,48 @@ section {
     width: 100%; }
   .latched #case1 {
     margin-top: calc(6rem + 20vh); }
+
+.tags {
+  color: #7C7C7C;
+  line-height: 1; }
+
+.intro {
+  margin: 15vh 0;
+  font-size: 2rem;
+  max-width: 50vw;
+  line-height: 1.5;
+  color: #627488;
+  font-weight: 100; }
+
+.toc {
+  margin-top: 20vh;
+  padding-top: 5vh; }
+  .toc.latched {
+    margin-top: calc(20vh - 100px); }
+  .toc ul {
+    padding: 2rem 0; }
+    .toc ul lh {
+      color: rgba(124, 124, 124, 0.5);
+      display: inherit;
+      line-height: 2;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .toc ul li {
+      margin: 0;
+      list-style: none;
+      font-size: 1.3rem;
+      line-height: 1.75;
+      font-weight: 100; }
+      .toc ul li a {
+        color: #7C7C7C;
+        text-decoration: none; }
+      .toc ul li:hover a {
+        color: #4E9DAE; }
+      .toc ul li.active a {
+        color: #4E9DAE;
+        font-weight: 300;
+        margin-left: 0; }
 
 /* Responsive Layout */
 /* Extra-small devices */
