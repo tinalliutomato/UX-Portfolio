@@ -98,10 +98,12 @@ nav {
   z-index: 100; }
   nav > .container {
     padding: 1.5rem; }
-  nav #navLogo img {
-    opacity: 0.15; }
-    nav #navLogo img:hover {
-      opacity: 0.75; }
+  nav #navLogo {
+    margin-left: 0; }
+    nav #navLogo img {
+      opacity: 0.15; }
+      nav #navLogo img:hover {
+        opacity: 0.75; }
   nav a {
     margin-left: 3rem;
     color: #0F0A06;
@@ -290,16 +292,22 @@ section {
   header quote {
     text-align: center; }
 
-  nav > .container {
-    padding: 1rem 1.5rem; }
-  nav a {
-    display: inline-block;
-    text-align: center; }
-    nav a span {
-      display: block;
-      padding-left: 0;
-      font-size: 1rem;
-      line-height: 1.5rem; }
+  nav {
+    height: 6rem; }
+    nav > .container {
+      padding: 1rem 1.5rem 0; }
+    nav #navLogo + div {
+      padding-left: 0; }
+    nav a {
+      display: inline-block;
+      text-align: center; }
+      nav a img {
+        height: 2rem; }
+      nav a span {
+        display: block;
+        padding-left: 0;
+        font-size: 1rem;
+        line-height: 1.5rem; }
 
   main #case1 {
     margin-top: 0;

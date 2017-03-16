@@ -25,14 +25,19 @@
 	}
 
 	nav {
+		height: 6rem;
 		> .container {
-			padding: 1rem 1.5rem;
+			padding: 1rem 1.5rem 0;
 		}
+		#navLogo + div {
+			padding-left: 0;
+		}
+
 		a {
 			display: inline-block;
 			text-align: center;
 			img {
-				
+				height: 2rem;
 			}
 			span {
 				display: block;

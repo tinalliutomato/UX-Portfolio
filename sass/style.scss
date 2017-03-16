@@ -140,6 +140,7 @@ nav {
 	}
 
 	#navLogo {
+		margin-left: 0;
 		img {
 			opacity: 0.15;
 			@extend .smooth-transition;
