@@ -29,8 +29,15 @@
 		> .container {
 			padding: 1rem 1.5rem 0;
 		}
-		#navLogo + div {
-			padding-left: 0;
+
+
+		#navLogo {
+			img {
+				margin-top: 1rem;
+			}
+			& + div {
+				padding-left: 0;
+			}
 		}
 
 		a {

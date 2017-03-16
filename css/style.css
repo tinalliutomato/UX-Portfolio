@@ -296,6 +296,8 @@ section {
     height: 6rem; }
     nav > .container {
       padding: 1rem 1.5rem 0; }
+    nav #navLogo img {
+      margin-top: 1rem; }
     nav #navLogo + div {
       padding-left: 0; }
     nav a {
