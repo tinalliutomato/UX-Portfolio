@@ -35,6 +35,8 @@
       text-align: center; }
       nav a.nav-link img {
         height: 2rem; }
+      nav a.nav-link i {
+        font-size: 2rem; }
       nav a.nav-link span {
         display: block;
         padding-left: 0;
