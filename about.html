@@ -14,7 +14,9 @@
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
 	<!-- Javascript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- s<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<!-- animsition.css -->
 	<link rel="stylesheet" href="css/animsition.min.css">
@@ -45,7 +47,7 @@
 				<!-- <p class="intro">If I were to describe myself in 2 “friends” characters, it would be Monica + Pheobe XD</p> -->
 
 				<p class="intro"></p>
-				<img src="images/about-me/me_7_once.gif" class="img-responsive center-block data">
+				<!-- <img src="images/about-me/me_7_once.gif" class="img-responsive center-block data"> -->
 
 				<p>Hi there, thanks for taking the time to check this out. My name is Tina Liu and I am a UI/UX designer based in Toronto, Canada. You probably noticed the two Chinese characters in my logo, that’s my Chinese name 西鸿, which can be interpreted as “a goose flying to the west”, thus the goose logo haha.</p>
 				
@@ -68,9 +70,30 @@
 				<section class="goodbye">
 					<div class="container-fluid">
 						<div class="row">
-							<quote class="center-block">Liked what you read?</quote>
+							<quote class="center-block">Like what you read?</quote>
 							<div class="center-block">
 								<a class="btn primary">Contact Me</a><a class="btn secondary">Curious for More</a>
+								<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+								<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Modal Header</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Some text in the modal.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
 							</div>
 						</div>
 					</div>
@@ -79,5 +102,6 @@
 			</div>
 		</div>
 	</main>
+
 </body>
 </html>
