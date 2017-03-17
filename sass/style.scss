@@ -75,6 +75,9 @@ h3 {
 h4 {
 	font-size: 1rem;
 	text-transform: uppercase;
+	&.modal-title {
+		line-height: 21px;
+	}
 }
 
 p {
@@ -87,6 +90,12 @@ quote {
     text-align: center;
     margin-bottom: 2rem;
     line-height: 1.5;
+	span {
+		font-family: "OpenSans", arial, sans-serif;
+		font-weight: 300;
+		font-size: 1.5rem;
+		line-height: 1.75;
+	}
 }
 
 .v-center-parent {
@@ -136,6 +145,10 @@ header {
 .spacer-quarter {
 	@extend .spacer;
 	height: 25vh;
+}
+.spacer-small {
+	@extend .spacer;
+	height:4rem;
 }
 
 nav.case {
@@ -393,6 +406,21 @@ main {
 
 	&:active {
 	}
+
+	&.stacked {
+		color: $black;
+		line-height: 1.25;
+		padding: 2rem 1rem;
+		margin-bottom: 3rem;
+		i {
+			display: block;
+			font-size: 150%;
+		}
+		&:hover {
+			border: 1px solid $yellow;
+    		color: $yellow;
+		}
+	}
 }
 
 .btn.primary {
@@ -503,8 +531,28 @@ section {
 		}
 	}
 }
+
+a.link {
+	color: $teal-dark;
+	text-decoration: none;
+
+	&:hover {
+		border-bottom: 1px solid $teal-dark;
+	}
+	&:after {
+		font-family: 'FontAwesome';
+		content: "\f08e";
+		color: $teal-dark;
+		padding-left: 0.3rem;
+	}
+}
+
 img.data {
 	margin-bottom: 5rem;
+}
+
+.red {
+	color: red;
 }
 
 @import 'responsive';

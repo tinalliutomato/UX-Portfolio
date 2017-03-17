@@ -52,6 +52,8 @@ h3 {
 h4 {
   font-size: 1rem;
   text-transform: uppercase; }
+  h4.modal-title {
+    line-height: 21px; }
 
 p {
   margin: 0 0 2.5rem; }
@@ -62,6 +64,11 @@ quote {
   text-align: center;
   margin-bottom: 2rem;
   line-height: 1.5; }
+  quote span {
+    font-family: "OpenSans", arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.75; }
 
 .v-center-parent {
   position: relative; }
@@ -89,7 +96,7 @@ header {
     margin-top: 5rem;
     text-align: left; }
 
-.spacer, .spacer-quarter {
+.spacer, .spacer-quarter, .spacer-small {
   width: 0;
   height: 100vh;
   clear: both;
@@ -97,6 +104,9 @@ header {
 
 .spacer-quarter {
   height: 25vh; }
+
+.spacer-small {
+  height: 4rem; }
 
 nav.case {
   position: fixed;
@@ -274,6 +284,17 @@ main {
   background: transparent;
   font-family: "OpenSans";
   font-weight: bold; }
+  .btn.stacked {
+    color: #0F0A06;
+    line-height: 1.25;
+    padding: 2rem 1rem;
+    margin-bottom: 3rem; }
+    .btn.stacked i {
+      display: block;
+      font-size: 150%; }
+    .btn.stacked:hover {
+      border: 1px solid #EBDC23;
+      color: #EBDC23; }
 
 .btn.primary {
   border: 1px solid #EBDC23;
@@ -353,8 +374,22 @@ section {
         font-weight: 300;
         margin-left: 0; }
 
+a.link {
+  color: #4E9DAE;
+  text-decoration: none; }
+  a.link:hover {
+    border-bottom: 1px solid #4E9DAE; }
+  a.link:after {
+    font-family: 'FontAwesome';
+    content: "\f08e";
+    color: #4E9DAE;
+    padding-left: 0.3rem; }
+
 img.data {
   margin-bottom: 5rem; }
+
+.red {
+  color: red; }
 
 /* Responsive Layout */
 /* Extra-small devices */
