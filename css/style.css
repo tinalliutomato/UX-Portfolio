@@ -393,6 +393,9 @@ img.data {
   .cards {
     flex-direction: column; }
 
+  .card {
+    margin-bottom: 2rem; }
+
   .latched #case1 {
     margin-top: 0; }
 
