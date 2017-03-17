@@ -52,8 +52,8 @@ body {
 }
 
 .smooth-transition {
-	-webkit-transition: all .15s linear; /* Safari 3.1 to 6.0 */
-	transition: all .15s linear;
+	-webkit-transition: all .25s linear; /* Safari 3.1 to 6.0 */
+	transition: all .25s linear;
 }
 
 h1, h2 {
@@ -214,26 +214,23 @@ nav {
 
 main {
 	background: linear-gradient(0deg, #FFFFFF 0%, $grey-light 100%);
+	background-attachment: fixed;
 	box-shadow: 0 -1rem 5rem $white;
 
 	section {
-
 		img.section-end {
 			opacity: 0.15;
 		}
 
-		&.active {
-			background: green;
+		&.active, &.goodbye{
 			.btn.primary {
-		    	color: darken($yellow, 10%);
-		    	border-color: darken($yellow, 10%);
 		    	color: $yellow;
 		    	border-color: $yellow;
 		    }
-		    .btn.secondary {
-		    	color: $grey-dark;
-		    	border-color: $grey-dark;
-		    }
+		    img {
+				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(0%);
+			}
 		}
 	}
 
@@ -263,12 +260,6 @@ main {
 		}
 		.btn {
 			margin: 1rem 0 0;
-		}
-	}
-	.case:hover {
-		img {
-			-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-			filter: grayscale(0%);
 		}
 	}
 
@@ -426,8 +417,6 @@ main {
 }
 
 .btn.primary {
-	border: 1px solid $yellow;
-    color: $yellow;
     border: 1px solid lighten($grey-dark,10%);
     color: lighten($grey-dark,10%);
 
