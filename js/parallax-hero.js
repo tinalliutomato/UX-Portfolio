@@ -1,4 +1,4 @@
-var navSpacer = '<div class="nav-spacer"></>';
+var $navSpacer = $('<div class="nav-spacer"></>');
 
 $(document).ready(function() {
 	var main = $('main');
@@ -10,15 +10,15 @@ $(document).ready(function() {
         var st = $(window).scrollTop();
         if (st >= mainOrgTop && !nav.hasClass("latched")) {
         	nav.addClass('latched');
-        	nav.after(navSpacer);
+        	nav.after($navSpacer);
         } else if (st < mainOrgTop) {
         	nav.removeClass('latched');
-			navSpacer.remove();
+			$navSpacer.remove();
         }
     }); 
 
     $( "#navLogo" ).click(function() {
 		nav.removeClass('latched');
-		navSpacer.remove();
+		$navSpacer.remove();
 	});
 });
