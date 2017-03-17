@@ -52,8 +52,8 @@ body {
 }
 
 .smooth-transition {
-	-webkit-transition: all .25s linear; /* Safari 3.1 to 6.0 */
-	transition: all .25s linear;
+	-webkit-transition: all .25s ease; /* Safari 3.1 to 6.0 */
+	transition: all .25s ease;
 }
 
 h1, h2 {

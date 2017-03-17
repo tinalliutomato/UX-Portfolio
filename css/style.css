@@ -33,9 +33,9 @@ body {
   line-height: 1.75; }
 
 .smooth-transition, nav #navLogo img, main .case img, .btn {
-  -webkit-transition: all .25s linear;
+  -webkit-transition: all .25s ease;
   /* Safari 3.1 to 6.0 */
-  transition: all .25s linear; }
+  transition: all .25s ease; }
 
 h1, h2 {
   font-family: "Marmelad", serif; }
