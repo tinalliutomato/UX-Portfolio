@@ -77,6 +77,10 @@ h4 {
 	text-transform: uppercase;
 }
 
+p {
+	margin: 0 0 2.5rem;
+}
+
 quote {
     font-family: "Caveat Regular", serif;
     font-size: 2.5rem;
@@ -165,7 +169,7 @@ nav {
 		}
 	}
 
-	a {
+	a.nav-link {
 		margin-left: 3rem;
 		color: $black;
 		text-decoration: none;
@@ -183,6 +187,13 @@ nav {
 		&:hover, &:active {
 			text-decoration: none;
 		}
+		&:hover {
+			color: $teal-dark;
+		}
+		&.active {
+			color: $teal-dark;
+			font-weight: bold;
+		}	
 	}
 }
 
@@ -431,16 +442,20 @@ section {
 
 .tags {
 	color: $grey-dark;
-	line-height: 1;
+	line-height: 1.5;
 }
 
 .intro {
 	margin: 15vh 0;
 	font-size: 2rem;
-	max-width: 50vw;
+	max-width: 75%;
 	line-height: 1.5;
 	color: $navy;
 	font-weight: 100;
+}
+
+.one-third {
+	width: 33%;
 }
 
 .toc {
@@ -483,6 +498,9 @@ section {
 		    }
 		}
 	}
+}
+img.data {
+	margin-bottom: 5rem;
 }
 
 @import 'responsive';

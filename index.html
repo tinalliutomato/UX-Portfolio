@@ -45,15 +45,15 @@
 	</div>
 	</header>
 	<div class="spacer"></div>
-	<main>
+	<main id="portfolio">
 		<nav>
 			<div class="container">
 					<a id="navLogo" href=""><img src="images/logo/logo-symbol.svg" alt="Back to Home" height="25"/></a>
 					<div class="pull-right">
-						<a href=""><img src="images/nav/portfolio.png"><span>Portfolio</span></a>
-						<a href=""><img src="images/nav/about.png"><span>About</span></a>
-						<a href=""><img src="images/nav/contact.png"><span>Contact</span></a>
-						<a href=""><img src="images/nav/avocado.png"><span>?</span></a>
+						<a class="nav-link active"><img src="images/nav/portfolio.png"><span>Portfolio</span></a>
+						<a class="nav-link" href="about.html"><img src="images/nav/about.png"><span>About</span></a>
+						<a class="nav-link" href=""><img src="images/nav/contact.png"><span>Contact</span></a>
+						<a class="nav-link" href=""><img src="images/nav/avocado.png"><span>?</span></a>
 					</div>
 			</div>
 		</nav>
@@ -201,10 +201,10 @@
 			</div>
 		</section>
 	</main>
-		<script type="text/javascript">
 
-		 var main = $('main');
-		 var mainOrgTop = main.position().top;
+	<script type="text/javascript">
+		var main = $('main');
+		var mainOrgTop = main.position().top;
 
 	    $(window).scroll(function(){
 	        var st = $(window).scrollTop();
@@ -216,7 +216,6 @@
 	    $( "#navLogo" ).click(function() {
 			main.removeClass('latched');
 		});
-		
 	</script>
 </body>
 </html>

@@ -53,6 +53,9 @@ h4 {
   font-size: 1rem;
   text-transform: uppercase; }
 
+p {
+  margin: 0 0 2.5rem; }
+
 quote {
   font-family: "Caveat Regular", serif;
   font-size: 2.5rem;
@@ -116,20 +119,25 @@ nav {
       opacity: 0.15; }
       nav #navLogo img:hover {
         opacity: 0.75; }
-  nav a {
+  nav a.nav-link {
     margin-left: 3rem;
     color: #0F0A06;
     text-decoration: none; }
-    nav a img {
+    nav a.nav-link img {
       vertical-align: text-bottom;
       height: 2.5rem; }
-    nav a span {
+    nav a.nav-link span {
       font-family: "Marmelad";
       font-size: 1.5rem;
       line-height: 3rem;
       padding-left: 1rem; }
-    nav a:hover, nav a:active {
+    nav a.nav-link:hover, nav a.nav-link:active {
       text-decoration: none; }
+    nav a.nav-link:hover {
+      color: #4E9DAE; }
+    nav a.nav-link.active {
+      color: #4E9DAE;
+      font-weight: bold; }
 
 main {
   background: linear-gradient(0deg, #FFFFFF 0%, #EDEEF3 100%);
@@ -299,15 +307,18 @@ section {
 
 .tags {
   color: #7C7C7C;
-  line-height: 1; }
+  line-height: 1.5; }
 
 .intro {
   margin: 15vh 0;
   font-size: 2rem;
-  max-width: 50vw;
+  max-width: 75%;
   line-height: 1.5;
   color: #627488;
   font-weight: 100; }
+
+.one-third {
+  width: 33%; }
 
 .toc {
   margin-top: 10vh;
@@ -339,6 +350,9 @@ section {
         font-weight: 300;
         margin-left: 0; }
 
+img.data {
+  margin-bottom: 5rem; }
+
 /* Responsive Layout */
 /* Extra-small devices */
 @media (max-width: 767px) {
@@ -364,12 +378,13 @@ section {
       margin-top: 1rem; }
     nav #navLogo + div {
       padding-left: 0; }
-    nav a {
+    nav a.nav-link {
+      margin-left: 2rem;
       display: inline-block;
       text-align: center; }
-      nav a img {
+      nav a.nav-link img {
         height: 2rem; }
-      nav a span {
+      nav a.nav-link span {
         display: block;
         padding-left: 0;
         font-size: 1rem;

@@ -23,12 +23,13 @@
       margin-top: 1rem; }
     nav #navLogo + div {
       padding-left: 0; }
-    nav a {
+    nav a.nav-link {
+      margin-left: 2rem;
       display: inline-block;
       text-align: center; }
-      nav a img {
+      nav a.nav-link img {
         height: 2rem; }
-      nav a span {
+      nav a.nav-link span {
         display: block;
         padding-left: 0;
         font-size: 1rem;
