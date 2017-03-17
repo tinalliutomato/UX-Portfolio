@@ -189,6 +189,7 @@ nav {
 		}
 		&:hover {
 			color: $teal-dark;
+			cursor: pointer;
 		}
 		&.active {
 			color: $teal-dark;
@@ -244,6 +245,9 @@ main {
 		.subhead {
 			color: $grey-dark;
 			margin-bottom: 2rem;
+		}
+		.btn {
+			margin: 1rem 0 0;
 		}
 	}
 	.case:hover {
@@ -374,11 +378,10 @@ main {
 }
 
 .btn {
-	margin-top: 1rem;
 	line-height: 5rem;
 	padding: 0 3rem;
 	border-radius: 0;
-	margin-right: 2rem;
+	margin: 1rem 0.5rem 0;
 	cursor: pointer;
 	background: transparent;
     font-family: "OpenSans";
@@ -417,6 +420,7 @@ section {
 }
 
 .center-block {
+	text-align: center;
 	display: table;
     margin-left: auto;
     margin-right: auto;
