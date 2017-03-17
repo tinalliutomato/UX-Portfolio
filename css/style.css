@@ -65,10 +65,10 @@ quote {
   margin-bottom: 2rem;
   line-height: 1.5; }
   quote span {
+    display: block;
     font-family: "OpenSans", arial, sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 1.75; }
+    font-size: 1.5rem; }
 
 .v-center-parent {
   position: relative; }
@@ -96,7 +96,7 @@ header {
     margin-top: 5rem;
     text-align: left; }
 
-.spacer, .spacer-quarter, .spacer-small {
+.spacer, .spacer-quarter, .spacer-small, .nav-spacer {
   width: 0;
   height: 100vh;
   clear: both;
@@ -108,11 +108,11 @@ header {
 .spacer-small {
   height: 4rem; }
 
+.nav-spacer {
+  height: 6rem; }
+
 nav.case {
-  position: fixed;
   background: transparent;
-  top: 0;
-  width: 100%;
   box-shadow: none; }
   nav.case img {
     margin-top: 15px; }
@@ -155,14 +155,16 @@ main {
   box-shadow: 0 -1rem 5rem #ffffff; }
   main section img.section-end {
     opacity: 0.15; }
-  main section:hover .btn.primary {
-    color: #c9bb12;
-    border-color: #c9bb12;
-    color: #EBDC23;
-    border-color: #EBDC23; }
-  main section:hover .btn.secondary {
-    color: #7C7C7C;
-    border-color: #7C7C7C; }
+  main section.active {
+    background: green; }
+    main section.active .btn.primary {
+      color: #c9bb12;
+      border-color: #c9bb12;
+      color: #EBDC23;
+      border-color: #EBDC23; }
+    main section.active .btn.secondary {
+      color: #7C7C7C;
+      border-color: #7C7C7C; }
   main .case .row {
     display: flex;
     flex-direction: row; }
@@ -318,16 +320,16 @@ section {
 
 .latched {
   position: fixed;
-  top: 0;
+  top: 0; }
+
+main.latched {
   width: 100%;
   height: 100vh;
   overflow-y: auto; }
-  .latched nav {
-    position: fixed;
-    top: 0;
-    width: 100%; }
-  .latched #case1 {
-    margin-top: calc(6rem + 10vh); }
+
+nav.latched {
+  position: fixed;
+  width: 100%; }
 
 .tags {
   color: #7C7C7C;
@@ -366,7 +368,9 @@ section {
       font-weight: 100; }
       .toc ul li a {
         color: #7C7C7C;
-        text-decoration: none; }
+        text-decoration: none;
+        display: inline;
+        padding: 0; }
       .toc ul li:hover a {
         color: #4E9DAE; }
       .toc ul li.active a {
@@ -398,7 +402,10 @@ img.data {
     flex-direction: column; }
 
   .latched #case1 {
-    margin-top: 6rem; }
+    margin-top: 0; }
+
+  .skill-level {
+    visibility: visible; }
 
   header #splashLogo {
     margin-left: -5rem;

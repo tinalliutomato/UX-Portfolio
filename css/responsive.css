@@ -5,7 +5,10 @@
     flex-direction: column; }
 
   .latched #case1 {
-    margin-top: 6rem; }
+    margin-top: 0; }
+
+  .skill-level {
+    visibility: visible; }
 
   header #splashLogo {
     margin-left: -5rem;

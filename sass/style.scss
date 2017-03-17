@@ -91,10 +91,10 @@ quote {
     margin-bottom: 2rem;
     line-height: 1.5;
 	span {
+		display: block;
 		font-family: "OpenSans", arial, sans-serif;
 		font-weight: 300;
 		font-size: 1.5rem;
-		line-height: 1.75;
 	}
 }
 
@@ -150,12 +150,13 @@ header {
 	@extend .spacer;
 	height:4rem;
 }
+.nav-spacer {
+	@extend .spacer;
+	height: 6rem;
+}
 
 nav.case {
-	position: fixed;
 	background: transparent;
-	top: 0;
-	width: 100%;
 	box-shadow: none;
 	img {
 		margin-top: 15px;
@@ -221,7 +222,8 @@ main {
 			opacity: 0.15;
 		}
 
-		&:hover {
+		&.active {
+			background: green;
 			.btn.primary {
 		    	color: darken($yellow, 10%);
 		    	border-color: darken($yellow, 10%);
@@ -457,19 +459,17 @@ section {
 .latched { 
 	position: fixed;
 	top: 0;
+}
+
+main.latched {
 	width: 100%;
 	height: 100vh;
 	overflow-y: auto;
+}
 
-	nav {
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
-
-	#case1 {
-		margin-top: calc(6rem + #{$section-margin});
-	}
+nav.latched {
+	position: fixed;
+	width: 100%;
 }
 
 .tags {
@@ -515,6 +515,8 @@ section {
 		    a {
 		    	color: $grey-dark;
 		    	text-decoration: none;
+		    	display: inline;
+				padding: 0;
 		    }
 		    &:hover {
 		    	a {

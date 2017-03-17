@@ -9,18 +9,19 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 
-	<!-- animsition.css -->
-	<link rel="stylesheet" href="css/animsition.min.css">
-	<script src="js/animsition.min.js"></script>
+	<!-- Custom Javascript -->
+	<script src="js/contact-me.js"></script>
+	<script src="js/parallax-hero.js"></script>
+	<script src="js/section-highlight.js"></script>
 
 </head>
 
@@ -48,11 +49,11 @@
 	<main id="portfolio">
 		<nav>
 			<div class="container">
-					<a id="navLogo" href="index.html"><img src="images/logo/logo-text.svg" alt="Back to Home" height="25"/></a>
+					<a id="navLogo" href="index.html"><img src="images/logo/logo-symbol.svg" alt="Back to Home" height="25"/></a>
 					<div class="pull-right">
 						<a class="nav-link active"><img src="images/nav/portfolio.png"><span>Portfolio</span></a>
 						<a class="nav-link" href="about.html"><img src="images/nav/about.png"><span>About</span></a>
-						<a class="nav-link" href=""><img src="images/nav/contact.png"><span>Contact</span></a>
+						<a class="nav-link" data-toggle="modal" data-target="#contactMe"><img src="images/nav/contact.png"><span>Contact</span></a>
 						<a class="nav-link" href=""><img src="images/nav/avocado.png"><span>?</span></a>
 					</div>
 			</div>
@@ -172,7 +173,7 @@
 
 				<div class="row">
 				<div class="center-block">
-					<a class="btn secondary">More About Me</a><a class="btn primary">Contact Me</a>
+					<a class="btn secondary" href="about.html">More About Me</a><a class="btn primary" data-toggle="modal" data-target="#contactMe">Contact Me</a>
 				</div>
 				</div>
 
@@ -202,20 +203,5 @@
 		</section>
 	</main>
 
-	<script type="text/javascript">
-		var main = $('main');
-		var mainOrgTop = main.position().top;
-
-	    $(window).scroll(function(){
-	        var st = $(window).scrollTop();
-	        if (st >= mainOrgTop) {
-	        	main.addClass('latched');
-	        }
-	    }); 
-
-	    $( "#navLogo" ).click(function() {
-			main.removeClass('latched');
-		});
-	</script>
 </body>
 </html>

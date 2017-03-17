@@ -9,22 +9,22 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 
-	<!-- animsition.css -->
-	<link rel="stylesheet" href="css/animsition.min.css">
-	<script src="js/animsition.min.js"></script>
+	<!-- Custom Javascript -->
+	<script src="js/toc.js"></script>
+	<script src="js/section-highlight.js"></script>
 	
 </head>
 <body data-spy="scroll" data-target=".toc" data-offset="70">
-	<nav class="case">
+	<nav class="case latched">
 		<div class="container-fluid">
 				<div class="pull-right">
 					<a href="index.html#case1"><img src="images/nav/close.png"></a>
@@ -66,10 +66,6 @@
 				<p>Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer. Tote bag 8-bit flannel dreamcatcher photo booth. Tofu photo booth American Apparel, cliche brunch swag freegan lomo retro cray Vice gastropub post-ironic +1 pickled. Marfa Tonx next level, Banksy lo-fi vegan pop-up chia small batch DIY seitan asymmetrical viral. Disrupt salvia bespoke craft beer master cleanse. Butcher cornhole gentrify pop-up, raw denim viral literally.</p>
 				</section>
 
-<!--				<section id="1">
-				<h2>The Problem</h2>
-				</section>-->
-
 				<section id="2">
 				<h2>The Final Design</h2>
 				</section>
@@ -92,32 +88,5 @@
 			</div>
 		</div>
 	</main>
-
-	<script type="text/javascript">
-    	/* Store the original positions */
-		 var toc = $('.toc');
-		 
-		 console.log(toc.position());
-		 
-		 var tocOrigTop = toc.position().top;
-		 
-
-		 //debugger;
-
-		/* respond to the scroll event */
-	    $(window).scroll(function(){
-	        /* get the current scroll position */
-	        var st = $(window).scrollTop();
-	        /* change classes based on section positions */
-	        if (st >= 100) {
-	        	toc.addClass('latched');
-	        	console.log(st);
-	        } else {
-	        	toc.removeClass('latched');
-	        }
-	        
-	    }); 
-
-	</script>
 </body>
 </html>
