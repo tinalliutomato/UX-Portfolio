@@ -98,7 +98,7 @@ header {
 
 .spacer, .spacer-quarter, .spacer-small, .nav-spacer {
   width: 0;
-  height: calc(100vh - 6rem);
+  height: 100vh;
   clear: both;
   position: relative; }
 
