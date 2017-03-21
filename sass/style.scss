@@ -66,10 +66,13 @@ h1 {
 
 h2 {
 	font-size: 2rem;
+	margin-top: 10vh;
 }
 
 h3 {
+	color: $grey-dark;
 	font-size: 1.5rem;
+	margin-top: 5vh;
 }
 
 h4 {
@@ -82,6 +85,17 @@ h4 {
 
 p {
 	margin: 0 0 2.5rem;
+	max-width: 75rem;
+}
+
+ul {
+	max-width:75rem;
+
+	li {
+		line-height: 1.5;
+		font-weight: 100;
+		margin-bottom: 1rem;
+	}
 }
 
 quote {
@@ -442,6 +456,7 @@ section {
 	margin: $section-margin 0;
 }
 
+
 .center-block {
 	text-align: center;
 	display: table;
@@ -471,7 +486,7 @@ nav.latched {
 }
 
 .intro {
-	margin: 15vh 0;
+	margin: 15vh 0 5vh;
 	font-size: 2rem;
 	max-width: 75%;
 	line-height: 1.5;
@@ -491,6 +506,10 @@ nav.latched {
 	}
 	ul {
 		padding: 2rem 0;
+		ul {
+	    	padding: 0.5rem 0;
+	    	margin-left: 2rem;
+	    }
 		lh {
 			color: rgba($grey-dark, 0.5);
 			display: inherit;
@@ -505,11 +524,15 @@ nav.latched {
 		    font-size: 1.3rem;
 		    line-height: 1.75;
 		    font-weight: 100;
+
 		    a {
 		    	color: $grey-dark;
 		    	text-decoration: none;
 		    	display: inline;
 				padding: 0;
+				&:hover {
+					background: none;
+				}
 		    }
 		    &:hover {
 		    	a {
@@ -548,6 +571,26 @@ img.data {
 
 .red {
 	color: red;
+}
+
+.placeholder {
+	background: darken($grey-light,5%);
+	border: 0;
+	/*width: 100%;*/
+	height:30vh;
+}
+.story {
+    border-left: 4px solid $grey-light;
+    padding-left: 1rem;
+    margin-left: 2rem;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.case-study {
+	img {
+		/*max-width: 75rem;*/
+	}
 }
 
 @import 'responsive';

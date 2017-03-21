@@ -44,10 +44,13 @@ h1 {
   font-size: 3rem; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-top: 10vh; }
 
 h3 {
-  font-size: 1.5rem; }
+  color: #7C7C7C;
+  font-size: 1.5rem;
+  margin-top: 5vh; }
 
 h4 {
   font-size: 1rem;
@@ -56,7 +59,15 @@ h4 {
     line-height: 21px; }
 
 p {
-  margin: 0 0 2.5rem; }
+  margin: 0 0 2.5rem;
+  max-width: 75rem; }
+
+ul {
+  max-width: 75rem; }
+  ul li {
+    line-height: 1.5;
+    font-weight: 100;
+    margin-bottom: 1rem; }
 
 quote {
   font-family: "Caveat Regular", serif;
@@ -331,7 +342,7 @@ nav.latched {
   line-height: 1.5; }
 
 .intro {
-  margin: 15vh 0;
+  margin: 15vh 0 5vh;
   font-size: 2rem;
   max-width: 75%;
   line-height: 1.5;
@@ -348,6 +359,9 @@ nav.latched {
     margin-top: calc(10vh - 100px); }
   .toc ul {
     padding: 2rem 0; }
+    .toc ul ul {
+      padding: 0.5rem 0;
+      margin-left: 2rem; }
     .toc ul lh {
       color: rgba(124, 124, 124, 0.5);
       display: inherit;
@@ -366,6 +380,8 @@ nav.latched {
         text-decoration: none;
         display: inline;
         padding: 0; }
+        .toc ul li a:hover {
+          background: none; }
       .toc ul li:hover a {
         color: #4E9DAE; }
       .toc ul li.active a {
@@ -389,6 +405,22 @@ img.data {
 
 .red {
   color: red; }
+
+.placeholder {
+  background: #dee0e9;
+  border: 0;
+  /*width: 100%;*/
+  height: 30vh; }
+
+.story {
+  border-left: 4px solid #EDEEF3;
+  padding-left: 1rem;
+  margin-left: 2rem;
+  line-height: 1.5;
+  font-weight: 100; }
+
+.case-study img {
+  /*max-width: 75rem;*/ }
 
 /* Responsive Layout */
 /* Extra-small devices */
