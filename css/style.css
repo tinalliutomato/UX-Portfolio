@@ -60,7 +60,7 @@ h4 {
 
 p {
   margin: 0 0 2.5rem;
-  max-width: 75rem; }
+  /*max-width: 75rem;*/ }
 
 ul {
   max-width: 75rem; }
@@ -419,8 +419,13 @@ img.data {
   line-height: 1.5;
   font-weight: 100; }
 
+.case-study section {
+  max-width: 75rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 .case-study img {
-  /*max-width: 75rem;*/ }
+  margin-bottom: 2rem; }
 
 /* Responsive Layout */
 /* Extra-small devices */
