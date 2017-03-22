@@ -427,6 +427,9 @@ img.data {
 .case-study img {
   margin-bottom: 2rem; }
 
+figcaption {
+  text-align: center; }
+
 /* Responsive Layout */
 /* Extra-small devices */
 @media (max-width: 767px) {
