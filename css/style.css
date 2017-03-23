@@ -294,6 +294,9 @@ main {
   background: transparent;
   font-family: "OpenSans";
   font-weight: bold; }
+  .btn i {
+    margin-right: 1rem;
+    margin-left: -1rem; }
   .btn.stacked {
     color: #0F0A06;
     line-height: 1.25;
@@ -426,6 +429,14 @@ img.data {
   margin-right: auto; }
 .case-study img {
   margin-bottom: 2rem; }
+.case-study figure {
+  margin-bottom: 2rem; }
+  .case-study figure img {
+    margin-bottom: 1rem; }
+  .case-study figure figcaption {
+    font-family: 'Lucida Grande', ariel, sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem; }
 
 figcaption {
   text-align: center; }

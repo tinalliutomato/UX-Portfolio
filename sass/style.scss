@@ -412,6 +412,11 @@ main {
     font-weight: bold;
     @extend .smooth-transition;
 
+    i {
+    	margin-right: 1rem;
+    	margin-left: -1rem;
+    }
+
 	&:hover {
 	}
 
@@ -596,6 +601,17 @@ img.data {
 	}
 	img {
 		margin-bottom: 2rem;
+	}
+	figure {
+		img {
+			margin-bottom: 1rem;
+		}
+		margin-bottom: 2rem;
+		figcaption {
+			font-family: 'Lucida Grande', ariel, sans-serif;
+			font-weight: normal;
+			font-size: 1.2rem;
+		}
 	}
 }
 
