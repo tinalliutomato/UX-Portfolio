@@ -67,6 +67,8 @@
 
 				<h2>Summary of the Project</h2>
 				<p>Ethical Shopper is based on a course project where we were asked to design an ecommerce shopping experience. I worked independently while meeting with my mentor on a weekly basis. My focus of this project was to design the overall e-commerce framework, but specifically focusing on the user stories defined. The project took 3 weeks from start to finish, roughly 150 hrs in total.</p>
+				<a href="#12" class="btn primary center-block " >View Final Design</a>
+
 				
 				<h2 id="1">The Problem</h2>
 				<p>With the rise in popularity of minimalism, more and more people started to become conscious about what they bring into their lives. In this process of being more conscious, it is common for one to become more interested about different aspects of the product: how long it will last, how it was made, how the materials were sourced, and what are its environmental impact at disposal. An average consumer may not consider all of these factors when they are buying a shirt, but at the end of the day, people want to feel good about their purchase. They want to know that their purchases will serve them well and serve them for a long time, and better yet, align with their values.</p>
@@ -96,8 +98,7 @@
 					<video  controls class="img-responsive center-block" src="images/es/research_scrolling.mov">
 					  Your browser does not support HTML5 video.
 					</video>
-				<figcaption>Everlane - scrolls through images first, then product description</figcaption>
-
+					<figcaption>Everlane - scrolls through images first, then product description</figcaption>
 				</figure>
 				
 				<h2 id="5">Design Highlights</h3>
@@ -105,10 +106,12 @@
 				<h3 id="6">Ethical Criteria</h3>
 				<p>While working on the product category page, I needed a way to quickly show the whether each product meets various ethical criteria, so first I needed to identify what those criteria are. I narrowed it down to 4: vegan, cruelty-free, fairtrade and eco-friendliness. The four criteria can exist independently except that vegan products are a subset of cruelty free products.  To make things even simpler I used icons to represent each of the four ethical criterion.</p>
 				<img src="images/es/ethical-icons.png" class="img-responsive center-block">
+				These icons are used <strong>throughout</strong> the site, in product category pages where the user can easily see how each product performs ethically, as well as in product detail pages where a more detailed explanation is given.
+				<img src="images/es/ethical_wireframe.png" class="img-responsive center-block">
 
 				<h3 id="7">Overall Site Architecture</h3>
-				<p>Before creating the initial layout for Ethical Shopper, I first did a quick research how other online retailers structure their site. One pattern that I observed was that stores that carry large amount of merchandise usually has an additional side navigation that quickly takes the user to a different product category, but I decided against it because it would distract the browsing experience the current category.</p>
-				<p>I also played around with the idea of having a legend for the different ethical criteria because I wanted it to be clear what those symbols meant, but I also didn’t want the ethical symbols to overwhelm the site and distract from the shopping experience. So in the end I did not include the legend anywhere but rather used the home page to tell the story of Ethical Shopper (I will talk about the home page design later). If the user forget what the the icon meant, he/she can simply hover over it and be reminded with a tooltip.</p>
+				<p>Before creating the initial layout for Ethical Shopper, I first did a quick research how other online retailers structure their site. One pattern that I observed was that stores that carry large amount of merchandise usually has an <strong>additional side navigation</strong> that quickly takes the user to a different product category, but I decided against it because it would distract the browsing experience the current category.</p>
+				<p>I also played around with the idea of having a <strong>legend</strong> for the different ethical criteria because I wanted it to be clear what those symbols meant, but I also didn’t want the ethical symbols to overwhelm the site and distract from the shopping experience. So in the end I did not include the legend anywhere but rather used the home page to tell the story of Ethical Shopper (I will talk about the home page design later). If the user forget what the the icon meant, he/she can simply hover over it and be reminded with a tooltip.</p>
 				<p>In the navigation, I also included shopping cart, sign-in/sign-up and search for quick access. Right below the navigation I included breadcrumbs to help orient the user, as well as an option to apply filter on their browsing results.</p>
 				<img src="images/es/architecture-1.png" class="img-responsive center-block">
 				<p>While translating the wireframes into designs, I had a few more ideas on the positions of the navigation and decided to do a <strong>preference test</strong>. My thought is that when browsing products on the desktop, we usually have enough horizontal real estate, but vertical real is limited and is made even more precious with a top navigation and filter bar. I created a variation with a left side nav and put the idea to a preference test. However, the test result revealed that none of the 16 participants liked the left navigation, and 95% liked the second option the best because of its visual simplicity and, I would guess familiarity? So I chose the 2nd variation as my overall site architecture. </p>
@@ -116,16 +119,22 @@
 				<img src="images/es/architecture-chosen.png" class="img-responsive center-block">
 
 				<h3 id="8">Product Detail Page</h3>
-				<p>The objective of the product detail page was to be free of distractions, and make the information easily discoverable, and key actions such as “Add to Cart” and “Save for Later” should be readily available. In the mobile version I made these two points of actions fixed to the bottom. This way, they are always accessible as the user browse through the product page. I designed a <strong>slide up transition</strong> for the buttons so the movement catches the user's attention, making the buttons even more obvious.</p>
-				<img src="images/es/product-detail-mobile.gif" class="img-responsive center-block">
-				<p>Product images are no doubt the most important element in online shopping, especially for fashion, so I made sure at least half of the screen real estate are allocated to it. It is not evident here but I designed a dual panel scrolling behavior to browse through the product images because it is the easiest interaction.</p>
-				<p>For writing a review for the product, I opted for a modal dialog so that the user does not need to navigate away from this page, and when the review is done, the dialog disappears leaving the user exactly where he/she left off and free to continue browsing. In mobile, a full-size panel with a slide up transition is used to make the most out of the limited screen space.</p>
-				<img src="images/es/product-detail-desktop.gif" class="img-responsive center-block">				
+				<p>The objective of the product detail page was to be free of distractions, and make the information easily discoverable, and key actions such as “Add to Cart” and “Save for Later” should be <strong>readily available</strong>. In the mobile version I made these two points of actions fixed to the bottom. This way, they are always accessible as the user browse through the product page. I designed a <strong>slide up transition</strong> for the buttons so the movement catches the user's attention, making the buttons even more obvious.</p>
+				<figure>
+					<img src="images/es/product-detail-mobile.gif" class="img-responsive center-block">
+					<figcaption>Product detail page for mobile<br>Note the buttons slide-up transition</figcaption>
+				</figure>
+				<p>Product images are no doubt the most important element in online shopping, especially for fashion, so I made sure <strong>at least half</strong> of the screen real estate are allocated to it. It is not evident here but I designed a dual panel scrolling behavior to browse through the product images because it is the easiest interaction.</p>
+				<p>For writing a review for the product, I opted for a modal dialog so that the user does not need to navigate away from this page, and when the review is done, the dialog disappears, and the user is back to exactly where he/she left off and is free to continue browsing. In mobile, a full-size panel with a slide up transition is used to make the most out of the limited screen space.</p>
+				<figure>
+					<img src="images/es/product-detail-desktop.gif" class="img-responsive center-block">
+					<figcaption>Product detail page for desktop</figcaption>
+				</figure>
 				
 
 				<h3 id="9">Checkout Process</h3>
-				<p>The objectives of the checkout design was present the cart contents and the associated costs in a clear, readable manner, and making the payment process frictionless and forgiving (i.e. No account? No problem. Want to make a change at the last minute? No problem.)</p>
-				<p>When designing the checkout process, I started by brainstorming the different check-out scenarios, specifically whether the user is signed in, and whether they have an account or not. For first time users, one is more likely to checkout as guest. This way I know what components I need to include in my design.</p>
+				<p>The objectives of the checkout design was present the cart contents and the associated costs in a clear, readable manner, and making the payment process <strong>frictionless and forgiving</strong> (i.e. No account? No problem. Want to make a change at the last minute? No problem.)</p>
+				<p>When designing the checkout process, I started by brainstorming the different <strong>check-out scenarios</strong>, specifically whether the user is signed in, and whether they have an account or not. For first time users, one is more likely to checkout as guest. This way I know what components I need to include in my design.</p>
 				<ul>
 					<li>As a first time user, I want to check out the items in my cart without signing up</li>
 					<li>As a first time user, after I have checked out, I want to use the information I filled in already to create an account</li>
@@ -147,7 +156,7 @@
 				<p>The home page of this project was one that I had the most difficulties with, mainly because it is a fictitious site and I didn’t have any clear goals on what I want to achieve with the home page. So the first iterations was just some common elements that I saw in other online stores, such as best sellers, new arrival, and a banner legend explaining the ethical filters.</p>
 				<img src="images/es/homepage_1.png" class="img-responsive center-block">
 				<p>However, after testing the prototype with a few users, one of the feedback I got was that the <strong>narrative</strong> of the site is not clear: because the site’s focus on the ethical aspect of shopping, the audience expect and want to know how the products or the platform is different from other sites, and just exactly what the site is all about. I thought that the home page would be the perfect place to provide a clear first impression.</p>
-				<p>I narrowed down the objective of the home page to be a simple introduction of what Ethical Shopper is about, but still providing the user a way to <strong>skip</strong> this introduction anytime to go straight to shopping. Check out the final design to see my solution for the home page!</p>
+				<p>I narrowed down the objective of the home page to be a simple introduction of what Ethical Shopper is about, but still providing the user a way to <strong>skip this introduction</strong> anytime to go straight to shopping. Check out the final design to see my solution for the home page!</p>
 				
 				<h2 id="12">Final Design</h2>
 				<p>I am quite happy with the design overall, although I added one more element to a site that is already information ridden in nature, the design looks clean and fresh, it is easy to navigate, thoughtful and delightful in interaction.</p>
@@ -163,7 +172,7 @@
 				<p>In addition, in this project I used Flinto to create various interactions in the site, the sliding in and out transitions, loading in between pages, which not only adds to the quality of the design but they have practical values too. For example the slide up transition for the mobile buttons make them more discoverable, the drop down effect of the filter makes its relationship with the rest of the page more clear.</p>
 				
 				<h2 id="14">Disclaimer</h2>
-				<p>The product images are from J.Crew because they are my favorite store. This is a personal, experimental, project that is not for profit.</p>
+				<p>The product images are from J.Crew because they are my favorite store. This is a personal, experimental, project that is not for profit. Home page images are purchased from Stocksy.</p>
 				</section>
 
 
