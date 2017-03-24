@@ -85,15 +85,19 @@ quote {
   position: relative; }
 
 .v-center-child, header .hero {
-  position: inherit;
+  position: relative;
   top: 50%;
   transform: translateY(-50%); }
 
 header {
+  width: 100%;
   height: 100vh;
   z-index: -100;
   position: fixed;
   top: 0; }
+  header .hero {
+    display: block;
+    margin: 0 auto; }
   header #splashLogo {
     margin-left: -89px; }
   header .subhead {
