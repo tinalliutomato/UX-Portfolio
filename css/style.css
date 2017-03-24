@@ -473,7 +473,7 @@ p.footer {
     max-width: 70%; }
   header .hero {
     text-align: center; }
-  header quote {
+  header quote, header .quote {
     text-align: center; }
 
   nav {
