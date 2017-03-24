@@ -441,6 +441,9 @@ img.data {
 figcaption {
   text-align: center; }
 
+p.footer {
+  color: #ced1df; }
+
 /* Responsive Layout */
 /* Extra-small devices */
 @media (max-width: 767px) {

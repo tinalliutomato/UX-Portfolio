@@ -619,6 +619,10 @@ figcaption {
 	text-align: center;
 }
 
+p.footer {
+	color: darken($grey-light,10%);
+}
+
 @import 'responsive';
 
 /* Flaticons */
