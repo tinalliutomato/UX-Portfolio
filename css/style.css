@@ -257,7 +257,7 @@ main {
   font-size: 1.5rem;
   letter-spacing: 3px;
   text-align: center;
-  visibility: hidden; }
+  /*visibility: hidden;*/ }
 
 .full {
   color: #EBDC23; }
@@ -503,7 +503,10 @@ figcaption {
 /* Small devices */
 @media (min-width: 768px) and (max-width: 991px) {
   .cards {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .card {
+    margin-bottom: 2rem; } }
 /* Medium-size devices */
 /* Large devices */
 /* Flaticons */

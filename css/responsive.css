@@ -60,7 +60,10 @@
 /* Small devices */
 @media (min-width: 768px) and (max-width: 991px) {
   .cards {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .card {
+    margin-bottom: 2rem; } }
 /* Medium-size devices */
 /* Large devices */
 
