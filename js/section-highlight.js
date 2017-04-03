@@ -13,14 +13,13 @@ $(document).ready(function() {
                     var divPosition = $(this).offset().top;
 
                     if (currentScroll > lastScroll) {
-                        if( divPosition - 200 < currentScroll ){
+                        if( divPosition - (window.innerHeight/2) < currentScroll ){
                             // We have either read the section or are currently reading the section so we'll call it our current section
                             $currentSection = $(this);
                             // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
                         }
                     } else {
-                        debugger;
-                        if( divPosition - 400 < currentScroll ){
+                        if( divPosition - (window.innerHeight/2) < currentScroll ){
                             // We have either read the section or are currently reading the section so we'll call it our current section
                             $currentSection = $(this);
                             // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
