@@ -32,7 +32,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.75; }
 
-.smooth-transition, nav #navLogo img, main .case img, .btn {
+.smooth-transition, nav #navLogo img, main .case img, main .goodbye .cover-image, .btn {
   -webkit-transition: all .25s ease;
   /* Safari 3.1 to 6.0 */
   transition: all .25s ease; }
@@ -44,8 +44,13 @@ h1 {
   font-size: 3rem; }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 10vh; }
+
+h2.small {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem !important; }
 
 h3 {
   color: #7C7C7C;
@@ -100,19 +105,21 @@ header {
   top: 0; }
   header .hero {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 3rem;
+    text-align: center; }
   header #splashLogo {
-    margin-left: -89px; }
+    /*margin-left: -89px;*/ }
   header .subhead {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 500;
     line-height: 2;
     color: rgba(124, 124, 124, 0.35); }
   header .quote {
     font-size: 2.75rem;
     display: block;
-    margin-top: 2rem;
-    text-align: left; }
+    margin-top: 5rem;
+    text-align: center; }
   header i {
     margin-right: 1rem; }
 
@@ -202,6 +209,8 @@ main {
   main .case h2 {
     margin-bottom: 0; }
   main .case .subhead {
+    font-weight: 100;
+    font-size: 1.75rem;
     color: #7C7C7C;
     margin-bottom: 2rem; }
   main .case .btn {
@@ -259,6 +268,24 @@ main {
       visibility: visible; }
   main .goodbye img {
     margin-top: 10vh; }
+  main .goodbye .cover-image {
+    margin-top: 5vh;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    box-shadow: 4px 4px 6px 0 rgba(124, 124, 124, 0.25); }
+  main .goodbye .subhead {
+    font-size: 1.5rem;
+    line-height: 1.5; }
+  main .goodbye a {
+    color: #0F0A06; }
+  main .goodbye a:hover {
+    color: #0F0A06; }
+  main .goodbye .case:hover .cover-image {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    box-shadow: 4px 4px 12px 0 rgba(124, 124, 124, 0.3); }
 
 /* Stars Rating */
 .skill-level {
@@ -289,20 +316,31 @@ main {
 .s1:before {
   content: "\f005"; }
 
+.legend {
+  margin: 0 0 5rem; }
+
+.legend-item {
+  display: inline-block;
+  margin: 0 1.5rem; }
+  .legend-item .skill-level {
+    margin-right: 1rem;
+    width: 9rem;
+    text-align: right; }
+
 .card {
   background: white;
   height: 100%;
   border: 1px solid rgba(124, 124, 124, 0.15); }
 
 .btn {
-  line-height: 5rem;
+  line-height: 5.5rem;
   padding: 0 3rem;
   border-radius: 0;
   margin: 1rem 0.5rem 0;
   cursor: pointer;
   background: transparent;
   font-family: "OpenSans";
-  font-weight: bold; }
+  font-size: 1.75rem; }
   .btn i {
     margin-right: 1rem;
     margin-left: -1rem; }
@@ -321,10 +359,15 @@ main {
 .btn.primary {
   border: 1px solid #969696;
   color: #969696; }
+  .btn.primary:hover {
+    background: rgba(235, 220, 35, 0.1);
+    color: white; }
 
 .btn.secondary {
   border: 1px solid #969696;
   color: #969696; }
+  .btn.secondary:hover {
+    background: rgba(124, 124, 124, 0.1); }
 
 section {
   padding: 10vh 0;
@@ -468,13 +511,12 @@ p.footer {
   .skill-level {
     visibility: visible; }
 
-  header #splashLogo {
-    margin-left: -5rem;
-    max-width: 70%; }
   header .hero {
     text-align: center; }
   header quote, header .quote {
     text-align: center; }
+    header quote span, header .quote span {
+      display: inline-block; }
 
   nav {
     height: 6rem; }
@@ -497,6 +539,17 @@ p.footer {
         padding-left: 0;
         font-size: 1rem;
         line-height: 1.5rem; }
+
+  .legend-item {
+    display: block; }
+    .legend-item .skill-level {
+      display: inline-block;
+      width: 9rem;
+      text-align: right; }
+    .legend-item .rating-label {
+      display: inline-block;
+      width: calc(100% - 10rem);
+      text-align: left; }
 
   main #case1 {
     margin-top: 0;

@@ -65,8 +65,14 @@ h1 {
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	margin-top: 10vh;
+}
+
+h2.small {
+	font-size: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem !important;
 }
 
 h3 {
@@ -83,7 +89,7 @@ h4 {
 	}
 }
 
-p {
+p{
 	margin: 0 0 2.5rem;
 	/*max-width: 75rem;*/
 }
@@ -137,13 +143,15 @@ header {
 		@extend .v-center-child;
 		display: block;
 		margin: 0 auto;
+		margin-top: 3rem;
+		text-align: center;
 	}
 
 	#splashLogo {
-		margin-left: -89px;
+		/*margin-left: -89px;*/
 	}
 	.subhead {
-		font-size: 2.5rem;
+		font-size: 2.3rem;
 		font-weight: 500;
 		line-height: 2;
 
@@ -152,8 +160,8 @@ header {
 	.quote {
 		font-size: 2.75rem;
 		display: block;
-		margin-top: 2rem;
-		text-align: left;
+		margin-top: 5rem;
+		text-align: center;
 	}
 	i {
 		margin-right: 1rem;
@@ -283,6 +291,8 @@ main {
 			margin-bottom: 0;
 		}
 		.subhead {
+			font-weight: 100;
+			font-size: 1.75rem;
 			color: $grey-dark;
 			margin-bottom: 2rem;
 		}
@@ -369,6 +379,31 @@ main {
 		img {
 			margin-top: 10vh;
 		}
+		.cover-image {
+			margin-top: 5vh;
+			width: 100%;
+			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			filter: grayscale(100%);
+			box-shadow: 4px 4px 6px 0 rgba($grey-dark,0.25);
+			@extend .smooth-transition;
+		}
+		.subhead {
+			font-size: 1.5rem;
+			line-height: 1.5;
+		}
+		a {
+			color: $black;
+		}
+		a:hover {
+			color: $black;
+		}
+
+		.case:hover {
+			.cover-image {
+				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+				box-shadow: 4px 4px 12px 0 rgba($grey-dark,0.3);
+			}
+		}
 	}
 }
 
@@ -405,6 +440,20 @@ main {
 	content: "\f005";
 }
 
+.legend {
+	margin: 0 0 5rem;
+}
+
+.legend-item {
+	display: inline-block;
+	margin: 0 1.5rem;
+	.skill-level {
+		margin-right: 1rem;
+		width: 9rem;
+		text-align: right;
+	}
+}
+
 .card {
 	background: white;
 	height: 100%;
@@ -412,14 +461,14 @@ main {
 }
 
 .btn {
-	line-height: 5rem;
+	line-height: 5.5rem;
 	padding: 0 3rem;
 	border-radius: 0;
 	margin: 1rem 0.5rem 0;
 	cursor: pointer;
 	background: transparent;
     font-family: "OpenSans";
-    font-weight: bold;
+    font-size: 1.75rem;
     @extend .smooth-transition;
 
     i {
@@ -454,13 +503,18 @@ main {
     color: lighten($grey-dark,10%);
 
     &:hover {
-
+    	background: rgba($yellow,0.1);
+    	color: white;
     }
 }
 
 .btn.secondary {
 	border: 1px solid lighten($grey-dark,10%);
     color: lighten($grey-dark,10%);
+    
+    &:hover {
+    	background: rgba($grey-dark,0.1);
+    }
 }
 
 $section-margin: 10vh;
