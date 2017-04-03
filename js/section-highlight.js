@@ -1,37 +1,39 @@
 $(document).ready(function() {
 
     $sections = $('section');
+    var $currentSection
+    var lastScroll = 0;
 
     $(document).scroll(function(){
-        /* get the current scroll position */
-        var currentScroll  = $(document).scrollTop();
-        /* change classes based on section positions */
-        // $currentSection is somewhere to place the section we must be looking at
-        var $currentSection
+            /* get the current scroll position */
+            var currentScroll  = $(document).scrollTop();
+            //debugger;
+            $sections.each(function(){
+                    // divPosition is the position down the page in px of the current section we are testing      
+                    var divPosition = $(this).offset().top;
 
-        // We check the position of each of the divs compared to the windows scroll positon
-        $sections.each(function(){
-            // divPosition is the position down the page in px of the current section we are testing      
-            var divPosition = $(this).offset().top;
+                    if (currentScroll > lastScroll) {
+                        if( divPosition - 200 < currentScroll ){
+                            // We have either read the section or are currently reading the section so we'll call it our current section
+                            $currentSection = $(this);
+                            // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
+                        }
+                    } else {
+                        debugger;
+                        if( divPosition - 400 < currentScroll ){
+                            // We have either read the section or are currently reading the section so we'll call it our current section
+                            $currentSection = $(this);
+                            // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
+                        }
+                    }
 
-            // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
-            // the -1 is so that it includes the div 1px before the div leave the top of the window.
-            if( divPosition - 100 < currentScroll ){
-                // We have either read the section or are currently reading the section so we'll call it our current section
-                $currentSection = $(this);
+                    if ($currentSection) {
+                        $sections.removeClass('active');
+                        $currentSection.addClass('active');
+                    }
+            })
 
-                // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
-            }
-
-            // This is the bit of code that uses the currentSection as its source of ID
-            if ($currentSection) {
-                $sections.removeClass('active');
-                $currentSection.addClass('active');
-            }
-
-
-        })
-
+            lastScroll = currentScroll;
     });
  
 });
