@@ -189,6 +189,9 @@ main {
   main section.active .btn.primary, main section.goodbye .btn.primary {
     color: #EBDC23;
     border-color: #EBDC23; }
+    main section.active .btn.primary:hover, main section.goodbye .btn.primary:hover {
+      background: #EBDC23;
+      color: white; }
   main section.active img, main section.goodbye img {
     -webkit-filter: grayscale(0%);
     /* Safari 6.0 - 9.0 */
@@ -333,6 +336,7 @@ main {
   border: 1px solid rgba(124, 124, 124, 0.15); }
 
 .btn {
+  position: relative;
   line-height: 5.5rem;
   padding: 0 3rem;
   border-radius: 0;
@@ -344,6 +348,9 @@ main {
   .btn i {
     margin-right: 1rem;
     margin-left: -1rem; }
+  .btn:active {
+    top: 2px;
+    box-shadow: none; }
   .btn.stacked {
     color: #0F0A06;
     line-height: 1.25;
@@ -360,14 +367,15 @@ main {
   border: 1px solid #969696;
   color: #969696; }
   .btn.primary:hover {
-    background: rgba(235, 220, 35, 0.1);
+    background: #a7a7a7;
     color: white; }
 
 .btn.secondary {
   border: 1px solid #969696;
   color: #969696; }
   .btn.secondary:hover {
-    background: rgba(124, 124, 124, 0.1); }
+    background: #a7a7a7;
+    color: white; }
 
 section {
   padding: 10vh 0;

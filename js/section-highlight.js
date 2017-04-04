@@ -14,7 +14,6 @@ $(document).ready(function() {
             $sections.each(function(){
                     // divPosition is the position down the page in px of the current section we are testing      
                     var divPosition = $(this).offset().top;
-
                     if (currentScroll > lastScroll) {
                         if (divPosition - half < currentScroll ){
                             // We have either read the section or are currently reading the section so we'll call it our current section
@@ -40,6 +39,6 @@ $(document).ready(function() {
             })
 
             lastScroll = currentScroll;
-    });
+    }); 
  
 });

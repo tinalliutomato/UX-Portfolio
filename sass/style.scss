@@ -262,6 +262,10 @@ main {
 			.btn.primary {
 		    	color: $yellow;
 		    	border-color: $yellow;
+			    &:hover {
+			    	background: $yellow;
+			    	color: white;
+			    }
 		    }
 		    img {
 				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
@@ -461,6 +465,7 @@ main {
 }
 
 .btn {
+	position: relative;
 	line-height: 5.5rem;
 	padding: 0 3rem;
 	border-radius: 0;
@@ -480,7 +485,9 @@ main {
 	}
 
 	&:active {
-	}
+    	top: 2px;
+    	box-shadow: none;
+    }
 
 	&.stacked {
 		color: $black;
@@ -498,12 +505,14 @@ main {
 	}
 }
 
+
+
 .btn.primary {
     border: 1px solid lighten($grey-dark,10%);
     color: lighten($grey-dark,10%);
 
     &:hover {
-    	background: rgba($yellow,0.1);
+    	background: lighten($grey-dark, 17%);
     	color: white;
     }
 }
@@ -513,7 +522,8 @@ main {
     color: lighten($grey-dark,10%);
     
     &:hover {
-    	background: rgba($grey-dark,0.1);
+    	background: lighten($grey-dark, 17%);
+    	color: white;
     }
 }
 
