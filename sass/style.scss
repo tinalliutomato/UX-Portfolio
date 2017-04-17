@@ -697,6 +697,33 @@ p.footer {
 	color: darken($grey-light,10%);
 }
 
+.margin-offset {
+	margin-left: -15px;
+}
+.stick-bottom {
+	margin-top: 100%;
+}
+.divline {
+	margin: 7rem;
+	border-top: 2px dotted darken($grey-light,3%);
+}
+.spacing {
+	margin: 5rem;
+	border: 1px solid transparent;
+}
+
+.tag {
+	font-family: "OpenSans", arial, sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+    vertical-align: super;
+    color: $teal_dark;
+    margin-left: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0 3px;
+
+}
 @import 'responsive';
 
 /* Flaticons */

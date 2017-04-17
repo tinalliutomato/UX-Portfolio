@@ -102,6 +102,9 @@
 			}
 		}
 	}
+	.stick-bottom {
+		margin-top: 0;
+	}
 }
 
 /* Small devices */
@@ -112,7 +115,9 @@
 	.card {
 		margin-bottom: 2rem;
 	}
-
+	.stick-bottom {
+		margin-top: 0;
+	}
 	
 }
 

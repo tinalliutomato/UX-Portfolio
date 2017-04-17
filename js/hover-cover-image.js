@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	/* Store the original positions */
-	 var $images = $('.cover-image');
+	 var $images = $('.hover-gif');
      console.log($images);
 
      $images.each(function(index, element){

@@ -66,14 +66,20 @@
   main .case .info {
     position: inherit;
     text-align: center;
-    padding: 0 1.5rem; } }
+    padding: 0 1.5rem; }
+
+  .stick-bottom {
+    margin-top: 0; } }
 /* Small devices */
 @media (min-width: 768px) and (max-width: 991px) {
   .cards {
     flex-direction: column; }
 
   .card {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+
+  .stick-bottom {
+    margin-top: 0; } }
 /* Medium-size devices */
 /* Large devices */
 

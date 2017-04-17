@@ -504,6 +504,31 @@ figcaption {
 p.footer {
   color: #ced1df; }
 
+.margin-offset {
+  margin-left: -15px; }
+
+.stick-bottom {
+  margin-top: 100%; }
+
+.divline {
+  margin: 7rem;
+  border-top: 2px dotted #e4e5ed; }
+
+.spacing {
+  margin: 5rem;
+  border: 1px solid transparent; }
+
+.tag {
+  font-family: "OpenSans", arial, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  vertical-align: super;
+  color: #4E9DAE;
+  margin-left: 1rem;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0 3px; }
+
 /* Responsive Layout */
 /* Extra-small devices */
 @media (max-width: 767px) {
@@ -572,14 +597,20 @@ p.footer {
   main .case .info {
     position: inherit;
     text-align: center;
-    padding: 0 1.5rem; } }
+    padding: 0 1.5rem; }
+
+  .stick-bottom {
+    margin-top: 0; } }
 /* Small devices */
 @media (min-width: 768px) and (max-width: 991px) {
   .cards {
     flex-direction: column; }
 
   .card {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+
+  .stick-bottom {
+    margin-top: 0; } }
 /* Medium-size devices */
 /* Large devices */
 /* Flaticons */
