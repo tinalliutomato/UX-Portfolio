@@ -290,6 +290,17 @@ p.footer {
     color: #FD5C9B;
     border: 2px solid #fd438c; }
 
+.modal-title {
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.modal-body {
+  margin: 7vh 0; }
+  .modal-body .mail {
+    margin-top: 10px;
+    font-size: 80%;
+    color: #FD5C9B; }
+
 /* Responsive Layout */
 /* Extra-small devices */
 @media (max-width: 767px) {

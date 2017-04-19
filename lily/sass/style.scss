@@ -397,5 +397,18 @@ p.footer {
     }
 }
 
+.modal-title {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.modal-body {
+	margin: 7vh 0;
+	.mail {
+		margin-top: 10px;
+		font-size: 80%;
+		color: $pink;
+	}
+}
+
 
 @import 'responsive';
