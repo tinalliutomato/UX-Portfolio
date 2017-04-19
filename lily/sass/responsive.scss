@@ -12,6 +12,9 @@
 	.card {
 		margin-bottom: 2rem;
 	}
+	#what1 {
+		flex-direction: column;
+	}
 
 	.timeline {
 		height: 5*$snippet-height;

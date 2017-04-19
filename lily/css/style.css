@@ -163,8 +163,8 @@ ul {
   transform: translateY(-50%); }
 
 #what1 {
-  /*display: flex;
-  flex-direction: row;*/ }
+  display: flex;
+  flex-direction: row; }
 
 .v-center {
   display: flex;
@@ -301,6 +301,10 @@ p.footer {
     font-size: 80%;
     color: #FD5C9B; }
 
+.margins {
+  margin-top: 5vh;
+  margin-bottom: 5vh; }
+
 /* Responsive Layout */
 /* Extra-small devices */
 @media (max-width: 767px) {
@@ -312,6 +316,9 @@ p.footer {
 
   .card {
     margin-bottom: 2rem; }
+
+  #what1 {
+    flex-direction: column; }
 
   .timeline {
     height: 150rem; }
