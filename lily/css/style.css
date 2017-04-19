@@ -163,8 +163,8 @@ ul {
   transform: translateY(-50%); }
 
 #what1 {
-  display: flex;
-  flex-direction: row; }
+  /*display: flex;
+  flex-direction: row;*/ }
 
 .v-center {
   display: flex;
