@@ -1,0 +1,150 @@
+/* Responsive Layout */
+
+/* Extra-small devices */
+@media (max-width: 767px) {
+
+	.text-right {
+		text-align: center;
+	}
+	.cards {
+		flex-direction: column;
+	}
+	.card {
+		margin-bottom: 2rem;
+	}
+
+	.timeline {
+		height: 5*$snippet-height;
+		.axis {
+			visibility: hidden;
+		}
+	}
+	.snippet {
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	.snippet:nth-of-type(even) {
+		right: auto;
+	}
+	.snippet:nth-of-type(2) {
+		top: 1*$snippet-height;
+	}
+	.snippet:nth-of-type(3) {
+		top: 2*$snippet-height;
+	}
+	.snippet:nth-of-type(4) {
+		top: 3*$snippet-height;
+	}
+	.snippet:nth-of-type(5) {
+		top: 4*$snippet-height;
+	}
+
+
+	header {
+		#splashLogo {
+		}
+		.hero {
+			text-align: center;
+		}
+		quote, .quote {
+			text-align: center;
+			span {
+				display: inline-block;
+			}
+		}
+	}
+
+	nav {
+		height: 6rem;
+		> .container {
+			padding: 1rem 1.5rem 0;
+		}
+
+
+		#navLogo {
+			img {
+				margin-top: 1rem;
+			}
+			& + div {
+				padding-left: 0;
+			}
+		}
+
+		a.nav-link {
+			margin-left: 2rem;
+			display: inline-block;
+			text-align: center;
+			img {
+				height: 2rem;
+			}
+			i {
+				font-size: 2rem;
+			}
+			span {
+				display: block;
+				padding-left: 0;
+				font-size: 1rem;
+				line-height:1.5rem;
+			}
+		}
+	}
+	.legend-item {
+		display: block;
+		.skill-level {
+			display: inline-block;
+			width: 9rem;
+			text-align: right;
+		}
+		.rating-label {
+			display: inline-block;
+			width: calc(100% - 10rem);
+			text-align: left;
+		}
+	}
+
+	main {
+		#case1 {
+			margin-top: 0;
+			padding-top: 0;
+		}
+		.case {
+			.row {
+				flex-direction: column;
+				>* {
+					padding: 0;
+				}
+			}
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+	.stick-bottom {
+		margin-top: 0;
+	}
+}
+
+/* Small devices */
+@media (min-width: 768px) and (max-width: 991px) {
+	.cards {
+		flex-direction: column;
+	}
+	.card {
+		margin-bottom: 2rem;
+	}
+	.stick-bottom {
+		margin-top: 0;
+	}
+	
+}
+
+/* Medium-size devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Large devices */
+@media (min-width: 1200px) {
+	
+}

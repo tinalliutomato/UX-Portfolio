@@ -1,0 +1,401 @@
+/* Color Palette */
+$white: #ffffff;
+$grey-light: #f0f0f0;
+$grey-dark: #7C7C7C;
+$coral: #FF5D6B;
+$pink: #FD5C9B;
+$black: #000000;
+
+/* Fonts */
+@font-face {
+    font-family: "Satisfy";
+    src: url(../fonts/Satisfy-Regular.ttf);
+}
+
+body {
+	font-family: Helvetica, arial, sans-serif;
+	font-weight: 100;
+	-webkit-font-smoothing: antialiased;
+	font-size: 2rem;
+	line-height: 1.25;
+}
+
+.smooth-transition {
+	-webkit-transition: all .5s ease; /* Safari 3.1 to 6.0 */
+	transition: all .5s ease;
+}
+
+
+h1 {
+	font-family: "Satisfy", serif;
+	font-size: 5rem;
+
+	.sub {
+		display: block;
+	    font-family: Helvetica, arial, sans-serif;
+	    font-size: 2rem;
+	    color: $pink;
+	    font-weight: bold;
+	}
+}
+
+h2 {
+	font-family: "Satisfy", serif;
+	font-size: 5rem;
+	margin-bottom: 8rem;
+
+	.sub {
+		display: block;
+	    font-family: Helvetica, arial, sans-serif;
+	    font-size: 2rem;
+	    color: $pink;
+	    font-weight: bold;
+	}
+
+	&:before, &:after {
+		content: " ";
+		position: absolute;
+		display: block;
+		width: 15rem;
+		height: 0;
+		border-bottom: 1px solid darken($grey-light, 10%);
+		top: 6rem;
+	}
+	&:before {
+		left: calc(50% - 20rem);
+	}
+	&:after {
+		right: calc(50% - 20rem);
+	}
+}
+
+.testimonial {
+	background: $grey-light;
+	padding: 20vh 0;
+
+	.company {
+	    font-size: 80%;
+    	font-weight: bold;
+	}
+}
+
+h3 {
+	font-family: Helvetica, arial, sans-serif;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+.icon-lg {
+	width: 10rem;
+	height: 10rem;
+	vertical-align: middle;
+}
+
+.icon-md {
+	width: 5rem;
+	height: 5rem;
+	vertical-align: middle;
+}
+
+$snippet-height: 30rem;
+.timeline {
+	height: 3*$snippet-height;
+    /*background: url(../images/timeline.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 7rem;*/
+	.axis {
+		width: 5px;
+		height: calc(100% - 7rem);
+		display: block;
+		position: absolute;
+		background-color: $grey-light;
+		left: 50%;
+		margin-top: 7rem;
+
+	}
+	.dot {
+		border-radius: 15px;
+	    border: 5px solid $grey-light;
+	    padding: 10px;
+	    margin-left: -13px;
+	    background: white;
+	    &:after {
+	    	content: " ";
+	    	width: 10rem;
+	    	height: 0;
+	    	display: block;
+	    	border-top: 2.5px solid $grey-light;
+	    	border-bottom: 2.5px solid $grey-light;
+	    	position: absolute;
+	    	z-index: -1;
+	    }
+	}
+	$dot-height: 12rem;
+	.dot:nth-of-type(odd) {
+		&:after {
+			left: -10rem;
+		}
+	}
+	.dot:nth-of-type(2) {
+		margin-top: 1*$dot-height;
+	}
+	.dot:nth-of-type(3) {
+		margin-top: 1*$dot-height;
+	}
+	.dot:nth-of-type(4) {
+		margin-top: 1*$dot-height;
+	}
+	.dot:nth-of-type(5) {
+		margin-top: 1*$dot-height;
+	}
+
+}
+.snippet {
+	display: inline-block;
+	position: absolute;
+	max-width: 30rem;
+}
+
+.snippet:nth-of-type(even) {
+	right: 0;
+}
+.snippet:nth-of-type(2) {
+	top: 0.5*$snippet-height;
+}
+.snippet:nth-of-type(3) {
+	top: 1*$snippet-height;
+}
+.snippet:nth-of-type(4) {
+	top: 1.5*$snippet-height;
+}
+.snippet:nth-of-type(5) {
+	top: 2*$snippet-height;
+}
+
+.light {
+	color: white;
+}
+
+p{
+	margin: 0 auto 2.5rem;
+	max-width: 62rem;
+}
+
+hr {
+	width: 50%;
+	max-width: 40rem;
+	margin: 7rem auto;
+}
+
+.link {
+	&:after {
+		font-family: 'FontAwesome';
+		content: "\f08e";
+		padding-left: 0.5rem;
+	}	
+}
+
+ul {
+	max-width:75rem;
+
+	li {
+		line-height: 1.5;
+		font-weight: 100;
+		margin-bottom: 1rem;
+	}
+}
+
+
+.v-center-parent {
+	position: relative;
+}
+.v-center-child {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#what1 {
+	display: flex;
+	flex-direction: row;
+}
+.v-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+}
+
+#what2 {
+	height: 100vh;
+	background: url('../images/fashion_bg.png');
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+}
+
+.mockup_outline {
+    width: 304px;
+    height: 598px;
+    background-image: url(../images/mockup.png);
+    background-size: cover;
+    
+    .mockup_video {
+    	top: 68px;
+	    margin: 0 auto;
+	    border: 3px solid rgba(117, 118, 118, 0.25);
+	    border-radius: 5px;
+	    display: block;
+	    position: relative;
+    }
+}
+
+
+header {
+	width: 100%;
+	height: 90vh;
+	background: url('../images/hero_bg.png');
+	background-size: cover;
+	background-attachment: fixed;
+	
+	.hero {
+		@extend .v-center-child;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.subhead {
+		font-size: 1.6rem;
+		margin-top: -1rem;
+	}
+	.quote {
+		font-size: 2.75rem;
+		display: block;
+		margin-top: 5rem;
+		text-align: center;
+	}
+	i {
+		margin-right: 1rem;
+	}
+}
+
+$section-margin: 10vh;
+$section-padding: 10vh;
+
+section {
+	padding: $section-padding 0;
+}
+
+main {
+	section {
+		img.section-end {
+			opacity: 0.15;
+		}
+	}
+
+	.case {
+		.row {
+			display: flex;
+			flex-direction: row;
+		}
+		img {
+			width: 100%;
+			max-width: 540px;
+			box-shadow: 4px 4px 6px 0 rgba($grey-dark,0.25);
+			@extend .smooth-transition;
+		}
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		    position: absolute;
+		    width: calc(100% - 15px);
+		    height: 100%;
+		    margin: 0 auto;
+		    top: 0;
+		    opacity: 0;
+			transition: .5s ease;
+			background-color: $black;
+		}
+
+		h3 {
+			margin-bottom: 0;
+			margin-top: 0;
+			color: white;
+		}
+		.subhead {
+			font-weight: 100;
+			font-size: 1.75rem;
+			color: white;
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			.info {
+				opacity: 0.6;
+			}
+			img {
+				box-shadow: 3px 3px 6px 0 rgba($grey-dark,0.5);
+			}
+		}
+	}
+
+	.goodbye {
+		height: 80vh;
+		padding: 15vh 0;
+	}
+
+	.social-media {
+		margin-top: 7vh;
+		a {
+			display: inline-block;
+			width: 10rem;
+			height: 10rem;
+			color: $black;
+			text-decoration: none;
+			font-size: 1.5rem;
+			line-height: 2rem;
+			font-weight: normal;
+			-webkit-font-smoothing: antialiased;
+			
+			span {
+				display: block;
+				margin-top: 7px;
+			}
+			&:hover {
+				
+			}
+		}
+	}
+}
+
+p.footer {
+	color: darken($grey-light,10%);
+	font-size: 80%;
+}
+
+.btn {
+	border-radius: 3rem;
+    line-height: 3rem;
+    padding: 1.5rem;
+    font-weight: bold;
+    @extend .smooth-transition;
+}
+.btn.primary {
+	font-size: 2rem;
+	width: 20rem;
+	background: linear-gradient(180deg, $coral 0%, $pink 100%);
+    color: white;
+    border: 2px solid $pink;
+
+    &:hover {
+    	background: transparent;
+    	color: $pink;
+    	border: 2px solid darken($pink, 5%);
+    }
+}
+
+
+@import 'responsive';
